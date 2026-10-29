@@ -1,0 +1,43 @@
+{
+  "preparedUtc": "2026-10-28T18:51:17.933Z",
+  "providerCalls": 0,
+  "realCredentialFilesOpened": 0,
+  "visibleBuildRun": false,
+  "tests": {
+    "passed": 26,
+    "failed": 0
+  },
+  "productionSessionMarkerExists": false,
+  "files": [
+    {
+      "path": "server/live-validation.cjs",
+      "bytes": 6422,
+      "sha256": "0d87e4970ee4c1c4361736caa2c752954911a0443b6742023e1250beeed8303a"
+    },
+    {
+      "path": "server/dialogue-adapter.cjs",
+      "bytes": 4989,
+      "sha256": "b4b10dc960b14fb5a22e26536cd7d67d84bf55be10d77051be6fdba62fb7439d"
+    },
+    {
+      "path": "tests/p2-live-validation.test.cjs",
+      "bytes": 10534,
+      "sha256": "c8910bbbb108629bf969b34afbbe6994ee82168510994547af88989257d7f5f3"
+    },
+    {
+      "path": "docs/P2-live-validation-plan.md",
+      "bytes": 12852,
+      "sha256": "2379aea15cc86dbe0e42190f5299dc499089a15372569c04ea38014dd58abc6d"
+    },
+    {
+      "path": "evidence/p2-live-validation-prep/offline-tests.txt",
+      "bytes": 2950,
+      "sha256": "65f62f0dfe9852f28db99598c6dc55ffb1cda3f57681c176c73e05d89cf54d35"
+    },
+    {
+      "path": "evidence/p2-live-validation-prep/initial-path-normalization-failure.txt",
+      "bytes": 1557,
+      "sha256": "a10acb210057b1aa3fb1db0be9dd5aeda58a5ef86d0fb80f59f8ce7cfbda118e"
+    }
+  ]
+}

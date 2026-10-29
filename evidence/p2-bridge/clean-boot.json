@@ -1,0 +1,21 @@
+{
+  "qaPresent": false,
+  "nativeNull": true,
+  "ownShim": false,
+  "phase": "incoming",
+  "mode": "entry",
+  "buffer": [
+    1280,
+    720
+  ],
+  "dpr": 2,
+  "ids": [
+    "consoles/helm",
+    "consoles/science",
+    "consoles/engineering",
+    "consoles/comms",
+    "crew/mara-vale",
+    "crew/ivo-sen",
+    "crew/tessa-rook"
+  ]
+}

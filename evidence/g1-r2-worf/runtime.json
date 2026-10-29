@@ -1,0 +1,819 @@
+{
+  "initial": {
+    "contract": "0.1.0",
+    "ids": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ],
+    "buffer": [
+      1280,
+      720
+    ],
+    "dpr": 2,
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.167 Safari/537.36"
+  },
+  "results": [
+    {
+      "name": "native-null pre-entry trusted E suppressed",
+      "pass": true,
+      "detail": {
+        "state": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": false,
+          "nativeNull": true,
+          "nativeCanvas": false,
+          "ownLockProperty": false,
+          "prompt": "",
+          "opacity": "0",
+          "crosshair": "",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "calls": [],
+        "input": {
+          "code": "KeyE",
+          "repeat": false,
+          "trusted": true
+        }
+      }
+    },
+    {
+      "name": "active fresh trusted E dispatches one helm",
+      "pass": true,
+      "detail": {
+        "calls": [
+          {
+            "id": "consoles/helm",
+            "label": "Helm Console"
+          }
+        ],
+        "state": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "1",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "input": {
+          "code": "KeyE",
+          "repeat": false,
+          "trusted": true
+        }
+      }
+    },
+    {
+      "name": "trusted Escape hides crosshair and prompt",
+      "pass": true,
+      "detail": {
+        "state": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": false,
+          "nativeNull": true,
+          "nativeCanvas": false,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "0",
+          "crosshair": "0",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "input": {
+          "code": "Escape",
+          "repeat": false,
+          "trusted": true
+        }
+      }
+    },
+    {
+      "name": "native-null paused trusted E suppressed",
+      "pass": true,
+      "detail": {
+        "state": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": false,
+          "nativeNull": true,
+          "nativeCanvas": false,
+          "ownLockProperty": false,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "0",
+          "crosshair": "0",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "calls": [],
+        "input": {
+          "code": "KeyE",
+          "repeat": false,
+          "trusted": true
+        }
+      }
+    },
+    {
+      "name": "cached locked true but native null E suppressed",
+      "pass": true,
+      "detail": {
+        "before": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": true,
+          "nativeNull": true,
+          "nativeCanvas": false,
+          "ownLockProperty": false,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "1",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "after": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": true,
+          "nativeNull": true,
+          "nativeCanvas": false,
+          "ownLockProperty": false,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "1",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "calls": []
+      }
+    },
+    {
+      "name": "released paused E does not replay on re-entry",
+      "pass": true,
+      "detail": {
+        "state": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "1",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "calls": []
+      }
+    },
+    {
+      "name": "fresh E after released-paused re-entry emits once",
+      "pass": true,
+      "detail": {
+        "calls": [
+          {
+            "id": "consoles/helm",
+            "label": "Helm Console"
+          }
+        ]
+      }
+    },
+    {
+      "name": "held paused E initially suppressed",
+      "pass": true,
+      "detail": {
+        "state": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": false,
+          "nativeNull": true,
+          "nativeCanvas": false,
+          "ownLockProperty": false,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "0",
+          "crosshair": "0",
+          "url": "http://127.0.0.1:8123/index.html"
+        }
+      }
+    },
+    {
+      "name": "held paused E does not replay on re-entry",
+      "pass": true,
+      "detail": {
+        "state": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "1",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        }
+      }
+    },
+    {
+      "name": "repeat and duplicate non-repeat held E suppressed",
+      "pass": true,
+      "detail": {
+        "calls": []
+      }
+    },
+    {
+      "name": "release then fresh trusted E after held re-entry emits one",
+      "pass": true,
+      "detail": {
+        "calls": [
+          {
+            "id": "consoles/helm",
+            "label": "Helm Console"
+          }
+        ],
+        "input": {
+          "code": "KeyE",
+          "repeat": false,
+          "trusted": true
+        },
+        "state": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "1",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        }
+      }
+    },
+    {
+      "name": "dispatch refreshes stale helm gaze to current Mara",
+      "pass": true,
+      "detail": {
+        "old": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "1",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "stale": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": -0.8580918647139005,
+            "y": -0.22973991509499195,
+            "z": -0.45923623890538834
+          },
+          "hover": "consoles/helm",
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "1",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "after": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": -0.8580918647139005,
+            "y": -0.22973991509499195,
+            "z": -0.45923623890538834
+          },
+          "hover": "crew/mara-vale",
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "1",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "calls": [
+          {
+            "id": "crew/mara-vale",
+            "label": "Mara Vale"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ordinary active E hold emits only one",
+      "pass": true,
+      "detail": {
+        "calls": [
+          {
+            "id": "crew/mara-vale",
+            "label": "Mara Vale"
+          }
+        ]
+      }
+    },
+    {
+      "name": "disabled cached target yields zero callbacks",
+      "pass": true,
+      "detail": {
+        "state": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": -0.8580918647139005,
+            "y": -0.22973991509499195,
+            "z": -0.45923623890538834
+          },
+          "hover": null,
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "1",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "calls": []
+      }
+    },
+    {
+      "name": "no-target active E yields zero",
+      "pass": true,
+      "detail": {
+        "state": {
+          "pos": {
+            "x": 0,
+            "y": 1.7000000476837158,
+            "z": 0
+          },
+          "forward": {
+            "x": 0,
+            "y": 0,
+            "z": -1
+          },
+          "hover": null,
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "0",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "calls": []
+      }
+    },
+    {
+      "name": "active W remains forward",
+      "pass": true,
+      "detail": {
+        "start": {
+          "pos": {
+            "x": 0,
+            "y": 1.7000000476837158,
+            "z": 0
+          },
+          "forward": {
+            "x": 0,
+            "y": 0,
+            "z": -1
+          },
+          "hover": null,
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "0",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "after": {
+          "pos": {
+            "x": 0,
+            "y": 1.7000000476837158,
+            "z": -0.5333333611488342
+          },
+          "forward": {
+            "x": 0,
+            "y": 0,
+            "z": -1
+          },
+          "hover": null,
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "0",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        }
+      }
+    },
+    {
+      "name": "active D remains right",
+      "pass": true,
+      "detail": {
+        "before": {
+          "pos": {
+            "x": 0,
+            "y": 1.7000000476837158,
+            "z": -0.5333333611488342
+          },
+          "forward": {
+            "x": 0,
+            "y": 0,
+            "z": -1
+          },
+          "hover": null,
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "0",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "after": {
+          "pos": {
+            "x": 0.5333333611488342,
+            "y": 1.7000000476837158,
+            "z": -0.5333333611488342
+          },
+          "forward": {
+            "x": 0,
+            "y": 0,
+            "z": -1
+          },
+          "hover": null,
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "0",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        }
+      }
+    },
+    {
+      "name": "active mouselook turns right and down",
+      "pass": true,
+      "detail": {
+        "before": {
+          "pos": {
+            "x": 0.5333333611488342,
+            "y": 1.7000000476837158,
+            "z": -0.5333333611488342
+          },
+          "forward": {
+            "x": 0,
+            "y": 0,
+            "z": -1
+          },
+          "hover": null,
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "0",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "after": {
+          "pos": {
+            "x": 0.5333333611488342,
+            "y": 1.7000000476837158,
+            "z": -0.5333333611488342
+          },
+          "forward": {
+            "x": 0.20731182002824264,
+            "y": -0.10480716882888248,
+            "z": -0.9726444708312754
+          },
+          "hover": null,
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "0",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        }
+      }
+    },
+    {
+      "name": "paused movement and look remain stopped",
+      "pass": true,
+      "detail": {
+        "before": {
+          "pos": {
+            "x": 0.5333333611488342,
+            "y": 1.7000000476837158,
+            "z": -0.5333333611488342
+          },
+          "forward": {
+            "x": 0.20731182002824264,
+            "y": -0.10480716882888248,
+            "z": -0.9726444708312754
+          },
+          "hover": null,
+          "locked": false,
+          "nativeNull": true,
+          "nativeCanvas": false,
+          "ownLockProperty": false,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "0",
+          "crosshair": "0",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "after": {
+          "pos": {
+            "x": 0.5333333611488342,
+            "y": 1.7000000476837158,
+            "z": -0.5333333611488342
+          },
+          "forward": {
+            "x": 0.20731182002824264,
+            "y": -0.10480716882888248,
+            "z": -0.9726444708312754
+          },
+          "hover": null,
+          "locked": false,
+          "nativeNull": true,
+          "nativeCanvas": false,
+          "ownLockProperty": false,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "0",
+          "crosshair": "0",
+          "url": "http://127.0.0.1:8123/index.html"
+        }
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": true
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": true
+    },
+    {
+      "code": "Escape",
+      "repeat": false,
+      "trusted": true
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": true
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": true,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": true
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": true,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": true,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": false
+    },
+    {
+      "code": "KeyW",
+      "repeat": false,
+      "trusted": false
+    },
+    {
+      "code": "KeyD",
+      "repeat": false,
+      "trusted": false
+    },
+    {
+      "code": "KeyW",
+      "repeat": false,
+      "trusted": false
+    }
+  ],
+  "calls": [
+    {
+      "id": "consoles/helm",
+      "label": "Helm Console"
+    },
+    {
+      "id": "consoles/helm",
+      "label": "Helm Console"
+    },
+    {
+      "id": "consoles/helm",
+      "label": "Helm Console"
+    },
+    {
+      "id": "crew/mara-vale",
+      "label": "Mara Vale"
+    },
+    {
+      "id": "crew/mara-vale",
+      "label": "Mara Vale"
+    }
+  ],
+  "lockAttempts": [
+    {
+      "activation": true,
+      "error": {
+        "name": "SecurityError",
+        "message": "The root document of this element is not valid for pointer lock."
+      }
+    }
+  ]
+}

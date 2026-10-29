@@ -1,0 +1,293 @@
+{
+  "time": "2026-10-28T18:15:45.330Z",
+  "url": "http://127.0.0.1:8123/index.html",
+  "method": "OpenBot browser; native-unlocked trusted pre-entry/paused E; temporary pointer-lock shim for active/re-entry; synthetic edge cases and preset positioning; no forced prompt",
+  "checks": [
+    {
+      "case": "pre-entry targeted",
+      "state": {
+        "locked": false,
+        "nativeNull": true,
+        "hover": "consoles/helm",
+        "promptOpacity": "0",
+        "count": 0
+      }
+    },
+    {
+      "case": "trusted E before entry; no shim",
+      "state": {
+        "locked": false,
+        "nativeNull": true,
+        "hover": "consoles/helm",
+        "promptOpacity": "0",
+        "count": 0
+      },
+      "input": {
+        "trusted": true,
+        "repeat": false
+      },
+      "pass": true
+    },
+    {
+      "case": "trusted enter native lock attempt",
+      "state": {
+        "locked": false,
+        "nativeNull": true,
+        "hover": "consoles/helm",
+        "promptOpacity": "0",
+        "count": 0
+      }
+    },
+    {
+      "case": "entry itself does not replay pre-entry E",
+      "expected": 0,
+      "delta": 0,
+      "pass": true,
+      "state": {
+        "locked": true,
+        "nativeNull": false,
+        "hover": "consoles/helm",
+        "promptOpacity": "0",
+        "count": 0
+      }
+    },
+    {
+      "case": "fresh trusted active E",
+      "expected": 1,
+      "delta": 1,
+      "pass": true,
+      "state": {
+        "locked": true,
+        "nativeNull": false,
+        "hover": "consoles/helm",
+        "promptOpacity": "1",
+        "count": 1
+      }
+    },
+    {
+      "case": "trusted Escape",
+      "state": {
+        "locked": false,
+        "nativeNull": true,
+        "hover": "consoles/helm",
+        "promptOpacity": "0",
+        "count": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "trusted paused E with native APIs; no shim",
+      "expected": 0,
+      "delta": 0,
+      "pass": true,
+      "state": {
+        "locked": false,
+        "nativeNull": true,
+        "hover": "consoles/helm",
+        "promptOpacity": "0",
+        "count": 1
+      }
+    },
+    {
+      "case": "released paused press not replayed on re-entry",
+      "expected": 0,
+      "delta": 0,
+      "pass": true,
+      "state": {
+        "locked": true,
+        "nativeNull": false,
+        "hover": "consoles/helm",
+        "promptOpacity": "0",
+        "count": 1
+      }
+    },
+    {
+      "case": "fresh active press; repeats and duplicate keydown suppressed",
+      "expected": 1,
+      "delta": 1,
+      "pass": true,
+      "state": {
+        "locked": true,
+        "nativeNull": false,
+        "hover": "consoles/helm",
+        "promptOpacity": "0",
+        "count": 2
+      }
+    },
+    {
+      "case": "disabled target",
+      "expected": 0,
+      "delta": 0,
+      "pass": true,
+      "state": {
+        "locked": true,
+        "nativeNull": false,
+        "promptOpacity": "0",
+        "count": 2
+      }
+    },
+    {
+      "case": "empty gaze",
+      "expected": 0,
+      "delta": 0,
+      "pass": true,
+      "state": {
+        "locked": true,
+        "nativeNull": false,
+        "promptOpacity": "0",
+        "count": 2
+      }
+    },
+    {
+      "case": "current target changed from helm to Mara",
+      "expected": 1,
+      "delta": 1,
+      "pass": true,
+      "state": {
+        "locked": true,
+        "nativeNull": false,
+        "hover": "crew/mara-vale",
+        "promptOpacity": "0",
+        "count": 3
+      }
+    },
+    {
+      "case": "native release before lockchange blocks E",
+      "expected": 0,
+      "delta": 0,
+      "pass": true,
+      "state": {
+        "locked": true,
+        "nativeNull": true,
+        "hover": "crew/mara-vale",
+        "promptOpacity": "0",
+        "count": 3
+      }
+    },
+    {
+      "case": "E held across pause/re-entry; no queued or duplicate dispatch",
+      "expected": 0,
+      "delta": 0,
+      "pass": true,
+      "state": {
+        "locked": true,
+        "nativeNull": false,
+        "hover": "consoles/helm",
+        "promptOpacity": "0",
+        "count": 3
+      }
+    },
+    {
+      "case": "fresh trusted E after held-paused re-entry",
+      "expected": 1,
+      "delta": 1,
+      "pass": true,
+      "state": {
+        "locked": true,
+        "nativeNull": false,
+        "hover": "consoles/helm",
+        "promptOpacity": "1",
+        "count": 4
+      },
+      "input": {
+        "trusted": true,
+        "repeat": false
+      }
+    }
+  ],
+  "calls": [
+    {
+      "id": "consoles/helm",
+      "label": "Helm Console"
+    },
+    {
+      "id": "consoles/helm",
+      "label": "Helm Console"
+    },
+    {
+      "id": "crew/mara-vale",
+      "label": "Mara Vale"
+    },
+    {
+      "id": "consoles/helm",
+      "label": "Helm Console"
+    }
+  ],
+  "inputs": [
+    {
+      "trusted": true,
+      "repeat": false
+    },
+    {
+      "trusted": true,
+      "repeat": false
+    },
+    {
+      "trusted": true,
+      "repeat": false
+    },
+    {
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "trusted": false,
+      "repeat": true
+    },
+    {
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "trusted": false,
+      "repeat": true
+    },
+    {
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "trusted": true,
+      "repeat": false
+    }
+  ],
+  "buffer": [
+    1280,
+    720
+  ],
+  "dpr": 2,
+  "ids": [
+    "consoles/helm",
+    "consoles/science",
+    "consoles/engineering",
+    "consoles/comms",
+    "crew/mara-vale",
+    "crew/ivo-sen",
+    "crew/tessa-rook"
+  ],
+  "contract": "0.1.0"
+}

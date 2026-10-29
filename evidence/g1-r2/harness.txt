@@ -1,0 +1,7 @@
+state = ()=>({locked:player.isLocked(),nativeNull:document.pointerLockElement===null,hover:player.getHovered()?.entity.name,promptOpacity:getComputedStyle(document.getElementById('interact')).opacity,count:r2.calls.length})
+
+setLock = (locked)=>{r2.shimLocked=locked;document.dispatchEvent(new Event('pointerlockchange'));app.fire('update',0);}
+
+key = (type,repeat=false)=>document.dispatchEvent(new KeyboardEvent(type,{code:'KeyE',repeat}))
+
+check = (name,before,expected)=>{const delta=r2.calls.length-before;const result={case:name,expected,delta,pass:delta===expected,state:r2.state()};r2.checks.push(result);if(!result.pass)throw Error(name);}

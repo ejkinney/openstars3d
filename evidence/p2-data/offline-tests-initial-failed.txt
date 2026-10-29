@@ -1,0 +1,44 @@
+✔ documented endings have exact consequences and immutable input (1.190291ms)
+✖ all reachable action sequences stay bounded, restore faithfully and always have an exit (25.915458ms)
+✔ invalid/out-of-order/duplicate actions cannot change resources or skip consultations (0.169167ms)
+✔ crew text follows decisions and resource state, including debrief (0.191042ms)
+✔ fixed-step partition invariance, bounded catchup, pause and reset (0.454167ms)
+✔ runtime gates station actions and duplicate interactions; save failure never blocks (0.425ms)
+✔ restart invalidates a resolved-late old-run dialogue response (4.722458ms)
+✔ hung/rejected/malformed dialogue falls back; late timeout completion cannot replace it (22.002333ms)
+✔ offline adapter never calls fetch and rejects forged canonical checkpoints (0.477416ms)
+✔ mock provider: exact cheap model, thinking disabled, no retries, cap of four attempts (28.8165ms)
+✔ mock provider errors, wrong model, truncation, oversized responses and invalid schema fail closed (1.722708ms)
+✔ mock provider timeout is bounded even if fetch ignores abort; concurrent request stays offline (6.195958ms)
+✔ companion HTTP restricts host/origin/body and serves only allowlisted public modules (39.150416ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 12
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 234.78425
+
+✖ failing tests:
+
+test at tests/p2-systems.test.cjs:33:1
+✖ all reachable action sequences stay bounded, restore faithfully and always have an exit (25.915458ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(visited > 1000)
+  
+      at TestContext.<anonymous> (/Users/elliot/OpenBot/Shared/openstars-prototype-20261028/tests/p2-systems.test.cjs:52:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

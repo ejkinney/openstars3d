@@ -1,0 +1,152 @@
+[
+  {
+    "file": "01-live-helm-overlay.png",
+    "bytes": 232076,
+    "sha256": "57ede3176394f11c15f321c043fda6c98c6248a0626e36d3b2746dfbc5ce7e94"
+  },
+  {
+    "file": "01-live-helm-overlay.webm",
+    "bytes": 365031,
+    "sha256": "cf874f928201c416d5ffce2947658c0d99d4b018e8b2b9121163f42ceda48797"
+  },
+  {
+    "file": "01-live-helm-room-side.json",
+    "bytes": 355,
+    "sha256": "b57a1f63a2afb123c2c490619997bda884353794bb4e7a52119668810599ae08"
+  },
+  {
+    "file": "01-live-helm-room-side.png",
+    "bytes": 50584,
+    "sha256": "6a55728d5b9c69ece1dbd20b6469b5644f05730d0921e32fe3cc930a15d35579"
+  },
+  {
+    "file": "02-live-mara-overlay.png",
+    "bytes": 377696,
+    "sha256": "dd53cdefb400edfbbc2e5f2c6acb3187ca0108c80a5995013a598b03c49d8ee8"
+  },
+  {
+    "file": "02-live-mara-overlay.webm",
+    "bytes": 335673,
+    "sha256": "a2ad52e31239248f793cd722012bb4add07153c23b87eea253bbba3e111e5a99"
+  },
+  {
+    "file": "02-live-mara-separate.json",
+    "bytes": 363,
+    "sha256": "15f35556db19066bc78b1988f316f34a5799c2b46c3c22511f1f808b9ac4dc55"
+  },
+  {
+    "file": "02-live-mara-separate.png",
+    "bytes": 52163,
+    "sha256": "1560f9f3bc333cb6fcae845f75aee4e31ee0b0bd0a3aa25cd4994dfa943954b3"
+  },
+  {
+    "file": "03-viewscreen-overlay.png",
+    "bytes": 151754,
+    "sha256": "07a7cf28582628849c629b86bbe7f6536384965631a35c79d73027987a137f0b"
+  },
+  {
+    "file": "03-viewscreen-overlay.webm",
+    "bytes": 175398,
+    "sha256": "aa4734b06c6f5fb1d195ee16ad24caf2291920adc3158c1d946e91d2369b27f9"
+  },
+  {
+    "file": "03-viewscreen-walked-centre.json",
+    "bytes": 364,
+    "sha256": "9367ddd29216ed231d8de242af4bfda80c89a1c0361e558de9dfe8f99c82f914"
+  },
+  {
+    "file": "03-viewscreen-walked-centre.png",
+    "bytes": 24243,
+    "sha256": "709e311f50cb968323254ac2653b5b6047e5a783065b0069d23824008913b539"
+  },
+  {
+    "file": "04-preset-viewscreen.json",
+    "bytes": 210,
+    "sha256": "77c67a797ad012a411bd945fb5b7d347188362ced9bb40cdb88d341366b76092"
+  },
+  {
+    "file": "04-preset-viewscreen.png",
+    "bytes": 27312,
+    "sha256": "83cd15ce813fa294ad4fb5db120238e7bd368679830977cb53cae7ba89c8d150"
+  },
+  {
+    "file": "05-preset-crew.json",
+    "bytes": 226,
+    "sha256": "d2f7f5baddedbf1d9bf82156bbad35870cb668085bcba422d480e9b44850613d"
+  },
+  {
+    "file": "05-preset-crew.png",
+    "bytes": 41362,
+    "sha256": "05bafc7c8d000f14ac9485deb869f95e9d3eaf35e92ddf338d27cdaba3f3b5c6"
+  },
+  {
+    "file": "browser-observations.txt",
+    "bytes": 716,
+    "sha256": "808eddada62e923d143a31f85b65703b00a837f151015ea7dd1f5544e9146362"
+  },
+  {
+    "file": "capture-sink.pid",
+    "bytes": 5,
+    "sha256": "1a3f43b7198fa9d45add3bc6b1e224a6d1a7382008d5a49ec18b7b649eb5eb14"
+  },
+  {
+    "file": "final-pristine-boot-dpr2.json",
+    "bytes": 326,
+    "sha256": "ae545e58c31a6a79f4e4bc3aade8ab60ed60255e4b334c4effd081226d247f36"
+  },
+  {
+    "file": "helm-trusted-E.json",
+    "bytes": 2938,
+    "sha256": "087965f4f36d6150b6aa3a2a5bd5002302a979522153e35b4ef3d6e3b12b7fd0"
+  },
+  {
+    "file": "interactions.json",
+    "bytes": 5515,
+    "sha256": "a91a6eaa2605d524b4004dcdc0107f5bf2bb145e56671ab854cc567fa81635cc"
+  },
+  {
+    "file": "movement-collision.json",
+    "bytes": 7511,
+    "sha256": "cbe6941dde0df24273a6991c4c0345fcb9b12d003604a62493476707a251252f"
+  },
+  {
+    "file": "pause-no-shim.json",
+    "bytes": 1190,
+    "sha256": "f655f2b378f31e7dc3d33bbc2d6ae53f49adb0338afb6e1a727f1c9f60e09a29"
+  },
+  {
+    "file": "pause.json",
+    "bytes": 1947,
+    "sha256": "fa4aa4f0a8001b3cee21e965bdd8d60053bc69b0fe9e4c133e12414362849d23"
+  },
+  {
+    "file": "qa-harness-functions.txt",
+    "bytes": 1268,
+    "sha256": "306400710f02560dd212e7cdbc3f7058a65c5b6d80faf131c5068be32de3321a"
+  },
+  {
+    "file": "resolution-dpr1.json",
+    "bytes": 71,
+    "sha256": "7de7654b8452828cca45cbb1d72f305a23a693b36956b7e52a1249c14ce31923"
+  },
+  {
+    "file": "route.json",
+    "bytes": 1913,
+    "sha256": "dc978cb01c5429f205164ee2c5123370ffd5f449c5106cd5d9f050adfb9ce743"
+  },
+  {
+    "file": "source-sha256-after.txt",
+    "bytes": 414,
+    "sha256": "a5c2304238cd60685802177d5b4b2fdb6dd7a342adf2c58ca727aebb2415a796"
+  },
+  {
+    "file": "source-sha256-before.txt",
+    "bytes": 414,
+    "sha256": "a5c2304238cd60685802177d5b4b2fdb6dd7a342adf2c58ca727aebb2415a796"
+  },
+  {
+    "file": "summary.json",
+    "bytes": 24538,
+    "sha256": "495493a12b742ebf3c6a6a02d27c035f7c1f9d8c999946e74dc8cac87a7d64c9"
+  }
+]

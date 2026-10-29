@@ -1,0 +1,19 @@
+{
+  "method": "Mock fetch inspection only; no external calls",
+  "prefixes": 693,
+  "promptChecks": 2079,
+  "maxObservedPromptContentBytes": 1410,
+  "enforcedPromptContentByteLimit": 6000,
+  "outputTokensPerAttempt": 160,
+  "maxAttemptsPerAdapter": 4,
+  "intents": [
+    "assess-allocation",
+    "assess-approach",
+    "assess-evidence",
+    "assess-uncertainty",
+    "await-acknowledgement",
+    "reflect-outcome",
+    "weigh-allocation",
+    "weigh-approach"
+  ]
+}

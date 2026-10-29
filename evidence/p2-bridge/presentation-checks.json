@@ -1,0 +1,73 @@
+{
+  "method": "synthetic presentation fixture only; no provider call; restored original view immediately",
+  "checks": [
+    {
+      "name": "mock reaction is plain text",
+      "pass": true
+    },
+    {
+      "name": "mock generated assessment has explicit uncertainty",
+      "pass": true
+    },
+    {
+      "name": "presenter cannot mutate canonical game state",
+      "pass": true
+    },
+    {
+      "name": "consoles/helm content inside existing interaction AABB",
+      "pass": true,
+      "min": {
+        "x": -4.290000095367431,
+        "y": 0.6200000286102295,
+        "z": -3.1100001335144043
+      },
+      "max": {
+        "x": -2.5100000953674315,
+        "y": 1.3200000286102296,
+        "z": -3.1100001335144043
+      }
+    },
+    {
+      "name": "consoles/science content inside existing interaction AABB",
+      "pass": true,
+      "min": {
+        "x": -6.89,
+        "y": 0.6200000286102295,
+        "z": 0.2900000214576721
+      },
+      "max": {
+        "x": -5.11,
+        "y": 1.3200000286102296,
+        "z": 0.2900000214576721
+      }
+    },
+    {
+      "name": "consoles/engineering content inside existing interaction AABB",
+      "pass": true,
+      "min": {
+        "x": 5.11,
+        "y": 0.6200000286102295,
+        "z": 0.2900000214576721
+      },
+      "max": {
+        "x": 6.89,
+        "y": 1.3200000286102296,
+        "z": 0.2900000214576721
+      }
+    },
+    {
+      "name": "consoles/comms content inside existing interaction AABB",
+      "pass": true,
+      "min": {
+        "x": 2.5100000953674315,
+        "y": 0.6200000286102295,
+        "z": -3.1100001335144043
+      },
+      "max": {
+        "x": 4.290000095367431,
+        "y": 1.3200000286102296,
+        "z": -3.1100001335144043
+      }
+    }
+  ]
+}

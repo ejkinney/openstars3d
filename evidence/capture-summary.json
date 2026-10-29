@@ -1,0 +1,118 @@
+{
+  "overview": {
+    "booted": true,
+    "frame": 60,
+    "buffer": "1280x720",
+    "canvas": "1280x720",
+    "dpr": 1,
+    "renderer": "WebKit WebGL",
+    "entityCount": 56,
+    "contractVersion": "0.1.0",
+    "interactables": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ],
+    "centerPixel": null,
+    "pixelStats": {
+      "samples": 880,
+      "minLum": 20,
+      "maxLum": 178,
+      "avgLum": 46,
+      "buckets": 12
+    },
+    "hovered": null,
+    "shotPath": "evidence/overview.png"
+  },
+  "viewscreen": {
+    "booted": true,
+    "frame": 59,
+    "buffer": "1280x720",
+    "canvas": "1280x720",
+    "dpr": 1,
+    "renderer": "WebKit WebGL",
+    "entityCount": 56,
+    "contractVersion": "0.1.0",
+    "interactables": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ],
+    "centerPixel": null,
+    "pixelStats": {
+      "samples": 880,
+      "minLum": 20,
+      "maxLum": 188,
+      "avgLum": 46,
+      "buckets": 11
+    },
+    "hovered": null,
+    "shotPath": "evidence/viewscreen.png"
+  },
+  "consoles": {
+    "booted": true,
+    "frame": 49,
+    "buffer": "1280x720",
+    "canvas": "1280x720",
+    "dpr": 1,
+    "renderer": "WebKit WebGL",
+    "entityCount": 56,
+    "contractVersion": "0.1.0",
+    "interactables": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ],
+    "centerPixel": null,
+    "pixelStats": {
+      "samples": 880,
+      "minLum": 20,
+      "maxLum": 188,
+      "avgLum": 41,
+      "buckets": 12
+    },
+    "hovered": null,
+    "shotPath": "evidence/consoles.png"
+  },
+  "crew": {
+    "booted": true,
+    "frame": 70,
+    "buffer": "1280x720",
+    "canvas": "1280x720",
+    "dpr": 1,
+    "renderer": "WebKit WebGL",
+    "entityCount": 56,
+    "contractVersion": "0.1.0",
+    "interactables": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ],
+    "centerPixel": null,
+    "pixelStats": {
+      "samples": 880,
+      "minLum": 20,
+      "maxLum": 65,
+      "avgLum": 38,
+      "buckets": 5
+    },
+    "hovered": null,
+    "shotPath": "evidence/crew.png"
+  }
+}

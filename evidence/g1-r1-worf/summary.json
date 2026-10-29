@@ -1,0 +1,1166 @@
+{
+  "initial": {
+    "pos": {
+      "x": 0,
+      "y": 1.7000000476837158,
+      "z": 4.800000190734863
+    },
+    "forward": {
+      "x": 0,
+      "y": -0.01999866669333308,
+      "z": -0.9998000066665778
+    },
+    "hover": null,
+    "locked": true,
+    "prompt": "",
+    "opacity": "0",
+    "url": "http://127.0.0.1:8123/index.html",
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.167 Safari/537.36",
+    "dpr": 2,
+    "buffer": [
+      1280,
+      720
+    ],
+    "canvas": [
+      1280,
+      720
+    ],
+    "engine": "2.23.3",
+    "contract": "0.1.0",
+    "count": 59,
+    "ids": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ]
+  },
+  "route": [
+    {
+      "kind": "ordinary spawn",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": 1.7000000476837158,
+          "z": 4.800000190734863
+        },
+        "forward": {
+          "x": 0,
+          "y": -0.01999866669333308,
+          "z": -0.9998000066665778
+        },
+        "hover": null,
+        "locked": true,
+        "prompt": "",
+        "opacity": "0",
+        "url": "http://127.0.0.1:8123/index.html"
+      }
+    },
+    {
+      "code": "KeyA",
+      "frames": 64,
+      "dt": 0.016666666666666666,
+      "trusted": true,
+      "state": {
+        "pos": {
+          "x": -3.4133334159851074,
+          "y": 1.7000000476837158,
+          "z": 4.800000190734863
+        },
+        "forward": {
+          "x": 0,
+          "y": -0.01999866669333308,
+          "z": -0.9998000066665778
+        },
+        "hover": null,
+        "locked": true,
+        "prompt": "",
+        "opacity": "0",
+        "url": "http://127.0.0.1:8123/index.html"
+      }
+    },
+    {
+      "code": "KeyW",
+      "frames": 135,
+      "dt": 0.016666666666666666,
+      "trusted": true,
+      "state": {
+        "pos": {
+          "x": -3.4133334159851074,
+          "y": 1.7000000476837158,
+          "z": -2.398560047149658
+        },
+        "forward": {
+          "x": 0,
+          "y": -0.01999866669333308,
+          "z": -0.9998000066665778
+        },
+        "hover": null,
+        "locked": true,
+        "prompt": "",
+        "opacity": "0",
+        "url": "http://127.0.0.1:8123/index.html"
+      }
+    },
+    {
+      "kind": "synthetic relative mouse",
+      "movementX": 0,
+      "movementY": 190,
+      "state": {
+        "pos": {
+          "x": -3.4133334159851074,
+          "y": 1.7000000476837158,
+          "z": -2.398560047149658
+        },
+        "forward": {
+          "x": 0,
+          "y": -0.4068471603912298,
+          "z": -0.9134962441529757
+        },
+        "hover": "consoles/helm",
+        "locked": true,
+        "prompt": "Helm Console — [E] Take the helm",
+        "opacity": "1",
+        "url": "http://127.0.0.1:8123/index.html"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "code": "KeyW",
+      "trusted": true,
+      "repeat": false
+    },
+    {
+      "code": "KeyA",
+      "trusted": true,
+      "repeat": false
+    },
+    {
+      "code": "KeyW",
+      "trusted": true,
+      "repeat": false
+    },
+    {
+      "code": "KeyE",
+      "trusted": true,
+      "repeat": false
+    },
+    {
+      "code": "KeyE",
+      "trusted": true,
+      "repeat": false
+    },
+    {
+      "code": "KeyW",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyS",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "ArrowUp",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "ArrowDown",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyA",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyD",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "ArrowLeft",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "ArrowRight",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyW",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyS",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "ArrowUp",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "ArrowDown",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyA",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyD",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "ArrowLeft",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "ArrowRight",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyD",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyA",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyW",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyS",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyW",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyS",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyW",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyW",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyW",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyW",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyW",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyA",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyD",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyE",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyE",
+      "trusted": false,
+      "repeat": true
+    },
+    {
+      "code": "KeyE",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyE",
+      "trusted": false,
+      "repeat": true
+    },
+    {
+      "code": "KeyE",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyE",
+      "trusted": false,
+      "repeat": true
+    },
+    {
+      "code": "KeyE",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyE",
+      "trusted": false,
+      "repeat": true
+    },
+    {
+      "code": "KeyE",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyE",
+      "trusted": false,
+      "repeat": true
+    },
+    {
+      "code": "KeyE",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyE",
+      "trusted": false,
+      "repeat": true
+    },
+    {
+      "code": "KeyE",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyE",
+      "trusted": false,
+      "repeat": true
+    },
+    {
+      "code": "KeyE",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyE",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "Escape",
+      "trusted": true,
+      "repeat": false
+    },
+    {
+      "code": "KeyW",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyE",
+      "trusted": true,
+      "repeat": false
+    },
+    {
+      "code": "KeyS",
+      "trusted": false,
+      "repeat": false
+    },
+    {
+      "code": "KeyD",
+      "trusted": false,
+      "repeat": false
+    }
+  ],
+  "trustedHelm": [
+    {
+      "id": "consoles/helm",
+      "label": "Helm Console"
+    }
+  ],
+  "dispatches": [
+    {
+      "id": "consoles/helm",
+      "label": "Helm Console"
+    },
+    {
+      "id": "crew/mara-vale",
+      "label": "Mara Vale"
+    },
+    {
+      "id": "consoles/helm",
+      "label": "Helm Console"
+    },
+    {
+      "id": "consoles/comms",
+      "label": "Communications Console"
+    },
+    {
+      "id": "consoles/science",
+      "label": "Science Console"
+    },
+    {
+      "id": "consoles/engineering",
+      "label": "Engineering Console"
+    },
+    {
+      "id": "crew/mara-vale",
+      "label": "Mara Vale"
+    },
+    {
+      "id": "crew/ivo-sen",
+      "label": "Ivo Sen"
+    },
+    {
+      "id": "crew/tessa-rook",
+      "label": "Tessa Rook"
+    },
+    {
+      "id": "consoles/helm",
+      "label": "Helm Console"
+    }
+  ],
+  "movement": [
+    {
+      "yaw": 0,
+      "code": "KeyW",
+      "dx": 0,
+      "dz": -0.5333333611488342,
+      "dot": 0.5333333611488342,
+      "expected": 0.5333333333333333,
+      "pass": true
+    },
+    {
+      "yaw": 0,
+      "code": "KeyS",
+      "dx": 0,
+      "dz": 0.5333333611488342,
+      "dot": -0.5333333611488342,
+      "expected": -0.5333333333333333,
+      "pass": true
+    },
+    {
+      "yaw": 0,
+      "code": "ArrowUp",
+      "dx": 0,
+      "dz": -0.5333333611488342,
+      "dot": 0.5333333611488342,
+      "expected": 0.5333333333333333,
+      "pass": true
+    },
+    {
+      "yaw": 0,
+      "code": "ArrowDown",
+      "dx": 0,
+      "dz": 0.5333333611488342,
+      "dot": -0.5333333611488342,
+      "expected": -0.5333333333333333,
+      "pass": true
+    },
+    {
+      "yaw": 0,
+      "code": "KeyA",
+      "dx": -0.5333333611488342,
+      "dz": 0,
+      "dot": -0.5333333611488342,
+      "expected": -0.5333333333333333,
+      "pass": true
+    },
+    {
+      "yaw": 0,
+      "code": "KeyD",
+      "dx": 0.5333333611488342,
+      "dz": 0,
+      "dot": 0.5333333611488342,
+      "expected": 0.5333333333333333,
+      "pass": true
+    },
+    {
+      "yaw": 0,
+      "code": "ArrowLeft",
+      "dx": -0.5333333611488342,
+      "dz": 0,
+      "dot": -0.5333333611488342,
+      "expected": -0.5333333333333333,
+      "pass": true
+    },
+    {
+      "yaw": 0,
+      "code": "ArrowRight",
+      "dx": 0.5333333611488342,
+      "dz": 0,
+      "dot": 0.5333333611488342,
+      "expected": 0.5333333333333333,
+      "pass": true
+    },
+    {
+      "yaw": 0.7,
+      "code": "KeyW",
+      "dx": -0.34358277916908264,
+      "dz": -0.4079158306121826,
+      "dot": 0.5333333394843953,
+      "expected": 0.5333333333333333,
+      "pass": true
+    },
+    {
+      "yaw": 0.7,
+      "code": "KeyS",
+      "dx": 0.34358277916908264,
+      "dz": 0.4079158306121826,
+      "dot": -0.5333333394843953,
+      "expected": -0.5333333333333333,
+      "pass": true
+    },
+    {
+      "yaw": 0.7,
+      "code": "ArrowUp",
+      "dx": -0.34358277916908264,
+      "dz": -0.4079158306121826,
+      "dot": 0.5333333394843953,
+      "expected": 0.5333333333333333,
+      "pass": true
+    },
+    {
+      "yaw": 0.7,
+      "code": "ArrowDown",
+      "dx": 0.34358277916908264,
+      "dz": 0.4079158306121826,
+      "dot": -0.5333333394843953,
+      "expected": -0.5333333333333333,
+      "pass": true
+    },
+    {
+      "yaw": 0.7,
+      "code": "KeyA",
+      "dx": -0.4079158306121826,
+      "dz": 0.34358277916908264,
+      "dot": -0.5333333394843953,
+      "expected": -0.5333333333333333,
+      "pass": true
+    },
+    {
+      "yaw": 0.7,
+      "code": "KeyD",
+      "dx": 0.4079158306121826,
+      "dz": -0.34358277916908264,
+      "dot": 0.5333333394843953,
+      "expected": 0.5333333333333333,
+      "pass": true
+    },
+    {
+      "yaw": 0.7,
+      "code": "ArrowLeft",
+      "dx": -0.4079158306121826,
+      "dz": 0.34358277916908264,
+      "dot": -0.5333333394843953,
+      "expected": -0.5333333333333333,
+      "pass": true
+    },
+    {
+      "yaw": 0.7,
+      "code": "ArrowRight",
+      "dx": 0.4079158306121826,
+      "dz": -0.34358277916908264,
+      "dot": 0.5333333394843953,
+      "expected": 0.5333333333333333,
+      "pass": true
+    }
+  ],
+  "look": {
+    "before": {
+      "pos": {
+        "x": 0,
+        "y": 1.7000000476837158,
+        "z": 0
+      },
+      "forward": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "hover": null,
+      "locked": true,
+      "prompt": "Mara Vale — [E] Speak",
+      "opacity": "0",
+      "url": "http://127.0.0.1:8123/index.html"
+    },
+    "after": {
+      "pos": {
+        "x": 0,
+        "y": 1.7000000476837158,
+        "z": 0
+      },
+      "forward": {
+        "x": 0.39880232889418454,
+        "y": -0.20845989984609956,
+        "z": -0.8930292115181501
+      },
+      "hover": null,
+      "locked": true,
+      "prompt": "Mara Vale — [E] Speak",
+      "opacity": "0",
+      "url": "http://127.0.0.1:8123/index.html"
+    },
+    "clamped": {
+      "pos": {
+        "x": 0,
+        "y": 1.7000000476837158,
+        "z": 0
+      },
+      "forward": {
+        "x": 0.049136263832170304,
+        "y": -0.9927129910375885,
+        "z": -0.11002974598634727
+      },
+      "hover": null,
+      "locked": true,
+      "prompt": "Mara Vale — [E] Speak",
+      "opacity": "0",
+      "url": "http://127.0.0.1:8123/index.html"
+    },
+    "pass": true
+  },
+  "collisions": [
+    {
+      "name": "right wall",
+      "expected": 7.56,
+      "actual": 7.559999942779541,
+      "pos": {
+        "x": 7.559999942779541,
+        "y": 1.7000000476837158,
+        "z": 3.5
+      },
+      "pass": true
+    },
+    {
+      "name": "left wall",
+      "expected": -7.56,
+      "actual": -7.559999942779541,
+      "pos": {
+        "x": -7.559999942779541,
+        "y": 1.7000000476837158,
+        "z": 3.5
+      },
+      "pass": true
+    },
+    {
+      "name": "front wall",
+      "expected": -5.56,
+      "actual": -5.559999942779541,
+      "pos": {
+        "x": 0,
+        "y": 1.7000000476837158,
+        "z": -5.559999942779541
+      },
+      "pass": true
+    },
+    {
+      "name": "back wall",
+      "expected": 5.56,
+      "actual": 5.559999942779541,
+      "pos": {
+        "x": 2,
+        "y": 1.7000000476837158,
+        "z": 5.559999942779541
+      },
+      "pass": true
+    },
+    {
+      "name": "chair aft",
+      "expected": 2.54,
+      "actual": 2.5399999618530273,
+      "pos": {
+        "x": 0,
+        "y": 1.7000000476837158,
+        "z": 2.5399999618530273
+      },
+      "pass": true
+    },
+    {
+      "name": "chair front",
+      "expected": 0.66,
+      "actual": 0.6600000262260437,
+      "pos": {
+        "x": 0,
+        "y": 1.7000000476837158,
+        "z": 0.6600000262260437
+      },
+      "pass": true
+    },
+    {
+      "name": "helm room side",
+      "expected": -2.76,
+      "actual": -2.759999990463257,
+      "pos": {
+        "x": -3.4000000953674316,
+        "y": 1.7000000476837158,
+        "z": -2.759999990463257
+      },
+      "pass": true
+    },
+    {
+      "name": "comms room side",
+      "expected": -2.76,
+      "actual": -2.759999990463257,
+      "pos": {
+        "x": 3.4000000953674316,
+        "y": 1.7000000476837158,
+        "z": -2.759999990463257
+      },
+      "pass": true
+    },
+    {
+      "name": "Mara room side",
+      "expected": -2.34,
+      "actual": -2.3399999141693115,
+      "pos": {
+        "x": -4.899288654327393,
+        "y": 1.7000000476837158,
+        "z": -2.3399999141693115
+      },
+      "pass": true
+    },
+    {
+      "name": "Ivo room side",
+      "expected": 1.36,
+      "actual": 1.3600000143051147,
+      "pos": {
+        "x": -5.199999809265137,
+        "y": 1.7000000476837158,
+        "z": 1.3600000143051147
+      },
+      "pass": true
+    },
+    {
+      "name": "Tessa room side",
+      "expected": 1.36,
+      "actual": 1.3600000143051147,
+      "pos": {
+        "x": 5.199999809265137,
+        "y": 1.7000000476837158,
+        "z": 1.3600000143051147
+      },
+      "pass": true
+    },
+    {
+      "name": "science inner side",
+      "expected": -4.71,
+      "actual": -4.710000038146973,
+      "pos": {
+        "x": -4.710000038146973,
+        "y": 1.7000000476837158,
+        "z": -0.5
+      },
+      "pass": true
+    },
+    {
+      "name": "engineering inner side",
+      "expected": 4.71,
+      "actual": 4.710000038146973,
+      "pos": {
+        "x": 4.710000038146973,
+        "y": 1.7000000476837158,
+        "z": -0.5
+      },
+      "pass": true
+    }
+  ],
+  "interactions": [
+    {
+      "id": "consoles/helm",
+      "state": {
+        "pos": {
+          "x": -3.4000000953674316,
+          "y": 1.7000000476837158,
+          "z": -2.299999952316284
+        },
+        "forward": {
+          "x": 0,
+          "y": -0.40007621045501074,
+          "z": -0.9164818742495445
+        },
+        "hover": "consoles/helm",
+        "locked": true,
+        "prompt": "Helm Console — [E] Take the helm",
+        "opacity": "1",
+        "url": "http://127.0.0.1:8123/index.html"
+      },
+      "calls": [
+        {
+          "id": "consoles/helm",
+          "label": "Helm Console"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "consoles/comms",
+      "state": {
+        "pos": {
+          "x": 3.4000000953674316,
+          "y": 1.7000000476837158,
+          "z": -2.299999952316284
+        },
+        "forward": {
+          "x": 0,
+          "y": -0.40007621045501074,
+          "z": -0.9164818742495445
+        },
+        "hover": "consoles/comms",
+        "locked": true,
+        "prompt": "Communications Console — [E] Open a channel",
+        "opacity": "1",
+        "url": "http://127.0.0.1:8123/index.html"
+      },
+      "calls": [
+        {
+          "id": "consoles/comms",
+          "label": "Communications Console"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "consoles/science",
+      "state": {
+        "pos": {
+          "x": -4,
+          "y": 1.7000000476837158,
+          "z": -0.5
+        },
+        "forward": {
+          "x": -0.9440789938904707,
+          "y": -0.32971341564156276,
+          "z": -0.001979100990502356
+        },
+        "hover": "consoles/science",
+        "locked": true,
+        "prompt": "Science Console — [E] Run a scan",
+        "opacity": "1",
+        "url": "http://127.0.0.1:8123/index.html"
+      },
+      "calls": [
+        {
+          "id": "consoles/science",
+          "label": "Science Console"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "consoles/engineering",
+      "state": {
+        "pos": {
+          "x": 4,
+          "y": 1.7000000476837158,
+          "z": -0.5
+        },
+        "forward": {
+          "x": 0.9440789938904707,
+          "y": -0.32971341564156276,
+          "z": -0.001979100990502356
+        },
+        "hover": "consoles/engineering",
+        "locked": true,
+        "prompt": "Engineering Console — [E] Allocate power",
+        "opacity": "1",
+        "url": "http://127.0.0.1:8123/index.html"
+      },
+      "calls": [
+        {
+          "id": "consoles/engineering",
+          "label": "Engineering Console"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "crew/mara-vale",
+      "state": {
+        "pos": {
+          "x": -3.413332939147949,
+          "y": 1.7000000476837158,
+          "z": -2.398560047149658
+        },
+        "forward": {
+          "x": -0.8789841925570795,
+          "y": -0.2350791506559602,
+          "z": -0.4148789970119619
+        },
+        "hover": "crew/mara-vale",
+        "locked": true,
+        "prompt": "Mara Vale — [E] Speak",
+        "opacity": "1",
+        "url": "http://127.0.0.1:8123/index.html"
+      },
+      "calls": [
+        {
+          "id": "crew/mara-vale",
+          "label": "Mara Vale"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "crew/ivo-sen",
+      "state": {
+        "pos": {
+          "x": -5.199999809265137,
+          "y": 1.7000000476837158,
+          "z": 2.200000047683716
+        },
+        "forward": {
+          "x": 0,
+          "y": -0.24119789527212698,
+          "z": -0.9704759529819871
+        },
+        "hover": "crew/ivo-sen",
+        "locked": true,
+        "prompt": "Ivo Sen — [E] Speak",
+        "opacity": "1",
+        "url": "http://127.0.0.1:8123/index.html"
+      },
+      "calls": [
+        {
+          "id": "crew/ivo-sen",
+          "label": "Ivo Sen"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "crew/tessa-rook",
+      "state": {
+        "pos": {
+          "x": 5.199999809265137,
+          "y": 1.7000000476837158,
+          "z": 2.200000047683716
+        },
+        "forward": {
+          "x": 0,
+          "y": -0.24119789527212698,
+          "z": -0.9704759529819871
+        },
+        "hover": "crew/tessa-rook",
+        "locked": true,
+        "prompt": "Tessa Rook — [E] Speak",
+        "opacity": "1",
+        "url": "http://127.0.0.1:8123/index.html"
+      },
+      "calls": [
+        {
+          "id": "crew/tessa-rook",
+          "label": "Tessa Rook"
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "pause": {
+    "before": {
+      "state": {
+        "pos": {
+          "x": -3.4000000953674316,
+          "y": 1.7000000476837158,
+          "z": -2.299999952316284
+        },
+        "forward": {
+          "x": 0,
+          "y": -0.40007621045501074,
+          "z": -0.9164818742495445
+        },
+        "hover": "consoles/helm",
+        "locked": false,
+        "prompt": "Helm Console — [E] Take the helm",
+        "opacity": "0",
+        "url": "http://127.0.0.1:8123/index.html"
+      },
+      "crosshair": "0",
+      "count": 9
+    },
+    "afterW": {
+      "pos": {
+        "x": -3.4000000953674316,
+        "y": 1.7000000476837158,
+        "z": -2.299999952316284
+      },
+      "forward": {
+        "x": 0,
+        "y": -0.40007621045501074,
+        "z": -0.9164818742495445
+      },
+      "hover": "consoles/helm",
+      "locked": false,
+      "prompt": "Helm Console — [E] Take the helm",
+      "opacity": "0",
+      "url": "http://127.0.0.1:8123/index.html"
+    },
+    "afterLook": {
+      "pos": {
+        "x": -3.4000000953674316,
+        "y": 1.7000000476837158,
+        "z": -2.299999952316284
+      },
+      "forward": {
+        "x": 0,
+        "y": -0.40007621045501074,
+        "z": -0.9164818742495445
+      },
+      "hover": "consoles/helm",
+      "locked": false,
+      "prompt": "Helm Console — [E] Take the helm",
+      "opacity": "0",
+      "url": "http://127.0.0.1:8123/index.html"
+    },
+    "afterE": {
+      "state": {
+        "pos": {
+          "x": -3.4000000953674316,
+          "y": 1.7000000476837158,
+          "z": -2.299999952316284
+        },
+        "forward": {
+          "x": 0,
+          "y": -0.40007621045501074,
+          "z": -0.9164818742495445
+        },
+        "hover": "consoles/helm",
+        "locked": false,
+        "prompt": "Helm Console — [E] Take the helm",
+        "opacity": "0",
+        "url": "http://127.0.0.1:8123/index.html"
+      },
+      "calls": [
+        {
+          "id": "consoles/helm",
+          "label": "Helm Console"
+        }
+      ],
+      "input": {
+        "code": "KeyE",
+        "trusted": true,
+        "repeat": false
+      }
+    }
+  },
+  "screen": {
+    "route": {
+      "back": {
+        "pos": {
+          "x": -3.4000000953674316,
+          "y": 1.7000000476837158,
+          "z": 0.0999947115778923
+        },
+        "forward": {
+          "x": 0,
+          "y": -0.002099998456500331,
+          "z": -0.9999977950008103
+        },
+        "hover": null,
+        "locked": true,
+        "prompt": "Helm Console — [E] Take the helm",
+        "opacity": "0",
+        "url": "http://127.0.0.1:8123/index.html"
+      },
+      "centre": {
+        "pos": {
+          "x": 0.013333333656191826,
+          "y": 1.7000000476837158,
+          "z": 0.0999947115778923
+        },
+        "forward": {
+          "x": 0,
+          "y": -0.002099998456500331,
+          "z": -0.9999977950008103
+        },
+        "hover": null,
+        "locked": true,
+        "prompt": "Helm Console — [E] Take the helm",
+        "opacity": "0",
+        "url": "http://127.0.0.1:8123/index.html"
+      },
+      "final": {
+        "pos": {
+          "x": 0.013333333656191826,
+          "y": 1.7000000476837158,
+          "z": 0.0999947115778923
+        },
+        "forward": {
+          "x": -0.002095550120611642,
+          "y": 0.06505402733421223,
+          "z": -0.997879542929552
+        },
+        "hover": null,
+        "locked": true,
+        "prompt": "Helm Console — [E] Take the helm",
+        "opacity": "0",
+        "url": "http://127.0.0.1:8123/index.html"
+      }
+    },
+    "aabb": [
+      {
+        "center": {
+          "x": 0,
+          "y": 2.0999999046325684,
+          "z": -5.949999809265137
+        },
+        "halfExtents": {
+          "x": 5.2,
+          "y": 1.7,
+          "z": 0.12
+        }
+      }
+    ],
+    "bars": [
+      {
+        "id": "bridge/viewscreen/frame/top",
+        "exists": true
+      },
+      {
+        "id": "bridge/viewscreen/frame/bottom",
+        "exists": true
+      },
+      {
+        "id": "bridge/viewscreen/frame/left",
+        "exists": true
+      },
+      {
+        "id": "bridge/viewscreen/frame/right",
+        "exists": true
+      }
+    ]
+  }
+}

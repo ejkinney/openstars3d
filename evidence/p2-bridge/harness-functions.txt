@@ -1,0 +1,15 @@
+check = (name,pass,details)=>{q.checks.push({name,pass:!!pass,details});if(!pass)throw Error(name);}
+
+state = ()=>({game:g.snapshot(),mode:r.getMode(),locked:p.isLocked(),locks:q.lockRequests,releases:q.releases})
+
+key = (code,type='keydown',repeat=false)=>document.dispatchEvent(new KeyboardEvent(type,{code,repeat}))
+
+tap = code=>{q.key(code);q.key(code,'keyup');}
+
+aim = (pos,target)=>p.setPreset(new pc.Vec3(...pos),new pc.Vec3(...target))
+
+open = id=>{g.close();C.emitInteract(id);}
+
+act = action=>{const v=g.snapshot();const item=v.actions.find(a=>a.action===action);if(!item)throw Error('Action unavailable '+action);const b=[...document.querySelectorAll('#panel-actions button')].find(b=>b.textContent===item.label);if(!b)throw Error('Missing presented button');b.click();}
+
+record = ()=>q.save('browser-results.json',{checks:q.checks,latest:q.state(),method:'trusted buttons/E for representative comms and crew, temporary lock shim; preset camera; other routes explicitly instrumented contract/action calls',buffer:[app.graphicsDevice.width,app.graphicsDevice.height],dpr:devicePixelRatio,contract:C.version})

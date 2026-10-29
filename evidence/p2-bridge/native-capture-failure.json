@@ -1,0 +1,5 @@
+{
+  "mode": "blocked",
+  "nativeNull": true,
+  "message": "Mouse capture unavailable: SecurityError Walking requires pointer lock. Use a browser/window that permits it, then click RETURN TO BRIDGE."
+}

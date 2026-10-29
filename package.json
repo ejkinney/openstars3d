@@ -1,0 +1,20 @@
+{
+  "name": "openstars-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open Stars — P1 greybox: local PlayCanvas first-person starship bridge (engine-only, no editor/account).",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node tools/bridge-server.cjs",
+    "companion": "node server/local-server.cjs",
+    "capture": "node tools/capture.js"
+  },
+  "dependencies": {
+    "@opencode/client": "^2.2.1",
+    "playcanvas": "^2.23.3"
+  },
+  "devDependencies": {
+    "pngjs": "^7.0.0",
+    "puppeteer-core": "^25.16.0"
+  }
+}

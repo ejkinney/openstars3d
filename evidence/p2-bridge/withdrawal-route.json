@@ -1,0 +1,54 @@
+{
+  "game": {
+    "state": {
+      "schema": 1,
+      "run": 3,
+      "revision": 2,
+      "phase": "debrief",
+      "time": 8,
+      "power": 100,
+      "hull": 100,
+      "consulted": [],
+      "scanned": false,
+      "approach": null,
+      "allocation": null,
+      "decision": "withdraw",
+      "outcome": {
+        "kind": "withdrawal",
+        "rescued": 0,
+        "lost": 12,
+        "damage": 0,
+        "score": 0
+      },
+      "history": [
+        {
+          "id": "consoles/comms",
+          "action": "acknowledge"
+        },
+        {
+          "id": "consoles/comms",
+          "action": "withdraw"
+        }
+      ]
+    },
+    "objective": "0/12 rescued; 12 lost; hull 100/100. Restart at communications.",
+    "panel": {
+      "id": "consoles/comms",
+      "text": "0/12 rescued; 12 lost; hull 100/100. Restart at communications.",
+      "source": "canonical"
+    },
+    "saveStatus": "saved",
+    "focusRequested": true,
+    "pending": false,
+    "actions": [
+      {
+        "action": "restart",
+        "label": "Restart encounter"
+      }
+    ]
+  },
+  "mode": "panel",
+  "locked": false,
+  "locks": 4,
+  "releases": 4
+}

@@ -1,0 +1,30 @@
+{
+  "time": "2026-10-28T18:54:51.778Z",
+  "url": "http://127.0.0.1:8123/index.html",
+  "qaPresent": false,
+  "ownLockShim": false,
+  "nativeLockNull": true,
+  "locked": false,
+  "mode": "entry",
+  "phase": "incoming",
+  "buffer": [
+    1280,
+    720
+  ],
+  "canvas": [
+    1280,
+    720
+  ],
+  "dpr": 2,
+  "contract": "0.1.0",
+  "ids": [
+    "consoles/helm",
+    "consoles/science",
+    "consoles/engineering",
+    "consoles/comms",
+    "crew/mara-vale",
+    "crew/ivo-sen",
+    "crew/tessa-rook"
+  ],
+  "statsHudHidden": true
+}

@@ -1,0 +1,30 @@
+{
+  "time": "2026-10-28T18:16:06.319Z",
+  "url": "http://127.0.0.1:8123/index.html",
+  "qaPresent": false,
+  "nativeNull": true,
+  "ownShimPresent": false,
+  "locked": false,
+  "onInteract": null,
+  "startVisible": "flex",
+  "buffer": [
+    1280,
+    720
+  ],
+  "canvas": [
+    1280,
+    720
+  ],
+  "dpr": 2,
+  "ids": [
+    "consoles/helm",
+    "consoles/science",
+    "consoles/engineering",
+    "consoles/comms",
+    "crew/mara-vale",
+    "crew/ivo-sen",
+    "crew/tessa-rook"
+  ],
+  "contract": "0.1.0",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.167 Safari/537.36"
+}

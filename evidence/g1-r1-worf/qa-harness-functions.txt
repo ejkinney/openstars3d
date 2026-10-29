@@ -1,0 +1,11 @@
+tick = (n=1,dt=1/60)=>{for(let i=0;i<n;i++)a.fire('update',dt);a.render();return QA.state();}
+
+key = (code,n)=>{document.dispatchEvent(new KeyboardEvent('keydown',{code}));QA.tick(n);document.dispatchEvent(new KeyboardEvent('keyup',{code}));return QA.state();}
+
+mouse = (x,y)=>{document.dispatchEvent(new MouseEvent('mousemove',{movementX:x,movementY:y}));return QA.tick(1,0);}
+
+set = (x,z,yaw=0,pitch=0)=>{const pos=new pc.Vec3(x,1.7,z),f=new pc.Vec3(-Math.sin(yaw)*Math.cos(pitch),Math.sin(pitch),-Math.cos(yaw)*Math.cos(pitch));p.setPreset(pos,pos.clone().add(f));QA.locked=true;document.dispatchEvent(new Event('pointerlockchange'));return QA.tick(1,0);}
+
+aim = (x,y,z)=>{const p=OpenStars.player.camera.getPosition(),f=OpenStars.player.getForward(),dx=x-p.x,dy=y-p.y,dz=z-p.z;const yaw=Math.atan2(-dx,-dz),pitch=Math.atan2(dy,Math.hypot(dx,dz)),oldYaw=Math.atan2(-f.x,-f.z),oldPitch=Math.asin(f.y);return QA.mouse((oldYaw-yaw)/.0021,(oldPitch-pitch)/.0021);}
+
+state = ()=>({pos:QA.vec(p.camera.getPosition()),forward:QA.vec(p.getForward()),hover:[...C.interactables].find(([id,d])=>d===p.getHovered())?.[0]||null,locked:p.isLocked(),prompt:document.getElementById('interact').innerText,opacity:document.getElementById('interact').style.opacity,url:location.href})

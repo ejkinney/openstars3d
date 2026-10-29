@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Open Stars — P2 systems harness</title>
+<style>
+body{background:#101923;color:#e5edf7;font:18px system-ui;margin:32px;max-width:1100px}h1{font-size:25px}p{line-height:1.5}.note{color:#b4c4d8}button{background:#24374a;color:white;border:1px solid #71869c;padding:12px;margin:5px;cursor:pointer;border-radius:5px}button:focus{outline:3px solid #e8a33d}pre{white-space:pre-wrap;background:#192938;padding:16px;font-size:17px}#dialogue{border:1px solid #e8a33d;padding:18px;margin-top:20px}#stats{color:#84c9ed}
+</style>
+<h1>A Light in the Static — P2 systems harness</h1>
+<p class="note">Offline diagnostic surface. Station buttons simulate contract callbacks. Bridge visuals, physical gaze/input and pointer lock are not integrated here.</p>
+<p id="stats"></p><pre id="objective"></pre><nav id="stations" aria-label="Simulated physical interactions"></nav>
+<section id="dialogue" aria-live="polite" hidden><p id="text"></p><p id="source" class="note"></p><div id="actions"></div><button id="close">Close interaction</button></section>
+<p><button id="reset">Restart diagnostic run</button><button id="resume">Resume saved run</button></p><pre id="debrief"></pre>
+<script src="/gameplay/encounter.js"></script><script src="/gameplay/dialogue.js"></script><script src="/gameplay/runtime.js"></script>
+<script>
+'use strict';
+const R = OpenStars.Encounter;
+const contract = { version: '0.1.0', onInteract: null, setInteractableEnabled() {} };
+const names = { 'consoles/comms':'Communications', 'consoles/science':'Science console', 'consoles/helm':'Helm console', 'consoles/engineering':'Engineering console', 'crew/mara-vale':'Mara Vale — helm', 'crew/ivo-sen':'Ivo Sen — science', 'crew/tessa-rook':'Tessa Rook — engineering' };
+const nodes = Object.fromEntries(['stats','objective','stations','dialogue','text','source','actions','debrief'].map(id => [id, document.getElementById(id)]));
+function button(label, click) { const b = document.createElement('button'); b.textContent = label; b.onclick = click; return b; }
+const game = OpenStars.Gameplay.createGame({ contract, storage: localStorage, dialogue: OpenStars.Gameplay.httpDialogue(), present(v) {
+  const s=v.state;
+  nodes.stats.textContent=`Time ${s.time}/8 · Power ${s.power}/100 · Hull ${s.hull}/100 · Run ${s.run} · ${v.saveStatus}`;
+  nodes.objective.textContent=v.objective;
+  nodes.dialogue.hidden=!v.panel;
+  nodes.text.textContent=v.panel ? v.panel.text + (v.panel.flavour ? ' '+v.panel.flavour : '') : '';
+  nodes.source.textContent=v.panel ? `Dialogue: ${v.panel.source}${v.pending?' · requesting optional flavour':''}${v.panel.reason?' · '+v.panel.reason:''}` : '';
+  nodes.actions.replaceChildren(...v.actions.map(({action,label}) => button(label, () => game.act(v.panel.id,action))));
+  nodes.debrief.textContent=s.outcome ? JSON.stringify({decision:s.decision,...s.outcome},null,2) : '';
+  for(const b of nodes.stations.children) b.disabled=!!v.panel;
+} });
+for (const id of R.IDS) nodes.stations.append(button(names[id],()=>contract.onInteract(id)));
+document.getElementById('close').onclick=()=>game.close();
+document.getElementById('reset').onclick=()=>game.restart();
+document.getElementById('resume').onclick=()=>game.resumeSaved();
+document.addEventListener('keydown',e=>{if(e.key==='Escape')game.suspend();});
+window.addEventListener('blur',()=>game.suspend());
+</script></html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="data:," />
+  <title>Open Stars — A Light in the Static</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      --font-display: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      --font-mono: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 100%; height: 100%; overflow: hidden;
+      background: #04060a;
+      font-family: var(--font-sans);
+      color: #cfe0ff;
+      -webkit-user-select: none; user-select: none;
+    }
+    #app {
+      position: absolute; inset: 0;
+      display: block;
+      /* PlayCanvas FILLMODE_KEEP_ASPECT sets width/height via inline style. */
+    }
+    .overlay {
+      position: absolute; pointer-events: none;
+    }
+    /* Crosshair */
+    #crosshair {
+      left: 50%; top: 50%; width: 6px; height: 6px;
+      margin-left: -3px; margin-top: -3px;
+      border-radius: 50%;
+      background: rgba(207,224,255,0.85);
+      box-shadow: 0 0 4px rgba(0,0,0,0.8);
+      opacity: 0; transition: opacity 120ms linear;
+    }
+    /* Perf / debug readout */
+    #hud {
+      left: 10px; top: 10px;
+      font-family: var(--font-mono);
+      font-size: 11px; line-height: 1.5;
+      color: #7fa3d8;
+      text-shadow: 0 1px 2px #000;
+      white-space: pre;
+    }
+    /* Interaction prompt */
+    #interact {
+      left: 50%; bottom: 16%;
+      transform: translateX(-50%);
+      padding: 7px 14px;
+      font-family: var(--font-sans);
+      font-size: 14px;
+      border: 1px solid rgba(140,180,255,0.5);
+      border-radius: 6px;
+      background: rgba(6,10,18,0.82);
+      color: #dceaff;
+      text-shadow: 0 1px 2px #000;
+      opacity: 0; transition: opacity 100ms linear;
+      text-align: center;
+    }
+    #interact b { color: #ffd479; font-weight: 600; }
+    /* Start / help screen */
+    #start {
+      inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 12px;
+      background: radial-gradient(ellipse at center, rgba(20,30,50,0.88), rgba(4,6,10,0.96));
+      pointer-events: auto;
+    }
+    #start h1 {
+      font-family: var(--font-display);
+      font-size: 26px; letter-spacing: 2px; color: #eaf2ff; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.12em;
+    }
+    #start .sub { font-family: var(--font-sans); font-size: 13px; color: #8aa4cc; }
+    #start .help {
+      margin-top: 18px; font-family: var(--font-sans); font-size: 13px; line-height: 1.9; color: #b8cdf0;
+      text-align: left;
+    }
+    #start .help kbd {
+      display: inline-block; min-width: 20px; text-align: center;
+      padding: 1px 7px; margin-right: 6px;
+      border: 1px solid rgba(150,180,230,0.45); border-bottom-width: 2px;
+      border-radius: 4px; background: rgba(12,18,32,0.9); color: #eef4ff;
+      font-family: var(--font-mono); font-size: 12px;
+    }
+    #start .start-btn {
+      margin-top: 22px; padding: 10px 26px;
+      font-family: var(--font-display); font-size: 15px; font-weight: 700; letter-spacing: 1px; color: #081018;
+      background: #7fb0ff; border: none; border-radius: 6px; cursor: pointer;
+      pointer-events: auto;
+    }
+    #start .start-btn:hover { background: #a3c6ff; }
+    /* Crew name labels (screen-space) */
+    .crew-label {
+      position: absolute; transform: translate(-50%, -100%);
+      padding: 2px 8px; font-family: var(--font-sans); font-size: 12px; line-height: 1.4;
+      border-radius: 4px; background: rgba(6,10,18,0.78);
+      border: 1px solid rgba(150,180,230,0.35);
+      text-align: center; white-space: nowrap;
+      text-shadow: 0 1px 2px #000;
+    }
+    .crew-label .role { color: #7fa3d8; font-family: var(--font-mono); font-size: 10px; }
+    [hidden] { display: none !important; }
+    button { font: inherit; cursor: pointer; padding: 10px 14px; color: #eef4ff;
+      border: 1px solid #7c9bc6; border-radius: 4px; background: #1c2c43; }
+    button:focus-visible { outline: 3px solid #ffd479; outline-offset: 3px; }
+    button:disabled { opacity: .55; cursor: wait; }
+    #start { z-index: 4; }
+    #capture-status { max-width: 560px; text-align: center; font-family: var(--font-mono); font-size: 14px; line-height: 1.6; color: #ffd479; }
+    #pause-button { position: absolute; right: 16px; top: 14px; z-index: 3; font-family: var(--font-sans); font-size: 12px; }
+    /* Docked lower-right dialog: never slices the forward viewscreen header/objective. */
+    #panel {
+      position: absolute; z-index: 5; right: 20px; bottom: 20px; top: auto; width: min(430px, calc(100vw - 40px));
+      max-height: calc(100vh - 76px); overflow: auto; padding: 18px;
+      border: 1px solid #7fa3d8; border-radius: 5px; background: rgba(7, 14, 26, 0.99);
+      font-family: var(--font-sans); font-size: 14px; line-height: 1.6; user-select: text;
+      backdrop-filter: blur(8px);
+    }
+    #panel h2 {
+      font-family: var(--font-display); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+      font-size: 19px; margin-bottom: 12px; color: #ffd479;
+    }
+    #panel p { margin-bottom: 14px; white-space: pre-wrap; }
+    #panel-text {
+      padding: 12px 14px; background: rgba(14, 25, 42, 0.9); border-left: 3px solid #f0a83e; border-radius: 4px;
+      font-family: var(--font-sans); font-size: 14.5px; line-height: 1.55; color: #eef4ff;
+    }
+    #panel-source {
+      font-family: var(--font-mono); color: #94abc7; font-size: 11.5px; margin-top: 12px; margin-bottom: 6px;
+    }
+    #panel-flavour {
+      padding: 8px 12px; background: rgba(9, 16, 28, 0.75); border-left: 2px solid #4da3ff; margin-bottom: 14px;
+      font-family: var(--font-sans); font-size: 13px; color: #c4d7f2; font-style: italic;
+    }
+    #panel-actions { display: flex; flex-direction: column; gap: 8px; margin: 16px 0; }
+    #panel-actions button { font-family: var(--font-sans); text-align: left; }
+    #panel-close { width: 100%; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  </style>
+</head>
+<body>
+  <canvas id="app" width="1280" height="720"></canvas>
+
+  <div id="crosshair" class="overlay"></div>
+  <div id="hud" class="overlay"></div>
+  <div id="interact" class="overlay"></div>
+  <div id="labels" class="overlay"></div>
+
+  <div id="start" class="overlay">
+    <h1 id="start-title">OPEN STARS</h1>
+    <div id="start-sub" class="sub">A Light in the Static</div>
+    <div class="help">
+      <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> move &nbsp;·&nbsp; <kbd>Mouse</kbd> look<br/>
+      <kbd>E</kbd> use station / speak &nbsp;·&nbsp; <kbd>Esc</kbd> pause<br/>
+      Start at communications, forward and to starboard.
+    </div>
+    <button id="start-btn" class="start-btn">ENTER BRIDGE</button>
+    <p id="capture-status" role="status" aria-live="polite"></p>
+    <button id="restart" hidden>Restart encounter</button>
+  </div>
+
+  <button id="pause-button" aria-label="Pause bridge">Pause</button>
+  <section id="panel" role="dialog" aria-modal="true" aria-labelledby="panel-title" aria-describedby="panel-text" hidden>
+    <h2 id="panel-title"></h2>
+    <p class="briefing-label">Ship briefing · authoritative</p>
+    <p id="panel-text"></p>
+    <p id="panel-source" role="status" aria-live="polite"></p>
+    <p id="panel-flavour" hidden></p>
+    <div id="panel-actions"></div>
+    <button id="panel-close">Close interaction</button>
+  </section>
+  <div id="mission-accessible" class="sr-only" aria-live="polite"></div>
+
+  <script src="lib/playcanvas.min.js"></script>
+  <script src="src/contract.js"></script>
+  <script src="src/scene.js"></script>
+  <script src="src/player.js"></script>
+  <script src="src/displays.js"></script>
+  <script src="src/presenter.js"></script>
+  <script src="src/gameplay/encounter.js"></script>
+  <script src="src/gameplay/dialogue.js"></script>
+  <script src="src/gameplay/runtime.js"></script>
+  <script src="src/main.js"></script>
+</body>
+</html>

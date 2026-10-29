@@ -1,0 +1,47 @@
+{
+  "game": {
+    "state": {
+      "schema": 1,
+      "run": 1,
+      "revision": 2,
+      "phase": "planning",
+      "time": 8,
+      "power": 100,
+      "hull": 100,
+      "consulted": [
+        "crew/mara-vale"
+      ],
+      "scanned": false,
+      "approach": null,
+      "allocation": null,
+      "decision": null,
+      "outcome": null,
+      "history": [
+        {
+          "id": "consoles/comms",
+          "action": "acknowledge"
+        },
+        {
+          "id": "crew/mara-vale",
+          "action": "consult"
+        }
+      ]
+    },
+    "objective": "Consult Mara at helm, Ivo at science and Tessa at engineering. Walking and talking spend no time.",
+    "panel": {
+      "id": "crew/mara-vale",
+      "text": "Aster: planning; time 8/8, power 100/100, hull 100/100. I can take us directly in for one time unit, but debris will hit us. Scan first and I can use a safe two-unit corridor.",
+      "source": "fallback",
+      "flavour": "Standing by, Captain.",
+      "reason": "offline"
+    },
+    "saveStatus": "saved",
+    "focusRequested": true,
+    "pending": false,
+    "actions": []
+  },
+  "mode": "panel",
+  "locked": false,
+  "locks": 3,
+  "releases": 3
+}

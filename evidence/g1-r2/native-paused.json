@@ -1,0 +1,18 @@
+{
+  "case": "trusted paused E with native APIs; no shim",
+  "expected": 0,
+  "delta": 0,
+  "pass": true,
+  "state": {
+    "locked": false,
+    "nativeNull": true,
+    "hover": "consoles/helm",
+    "promptOpacity": "0",
+    "count": 1
+  },
+  "input": {
+    "trusted": true,
+    "repeat": false
+  },
+  "ownShimPresent": false
+}

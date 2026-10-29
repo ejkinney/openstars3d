@@ -1,0 +1,44 @@
+[
+  {
+    "url": "http://127.0.0.1:8123/",
+    "expected": 200,
+    "actual": 200,
+    "pass": true
+  },
+  {
+    "url": "http://127.0.0.1:8123/src/gameplay/runtime.js",
+    "expected": 200,
+    "actual": 200,
+    "pass": true
+  },
+  {
+    "url": "http://127.0.0.1:8123/server/local-server.cjs",
+    "expected": 404,
+    "actual": 404,
+    "pass": true
+  },
+  {
+    "url": "http://127.0.0.1:8123/.env",
+    "expected": 404,
+    "actual": 404,
+    "pass": true
+  },
+  {
+    "url": "http://127.0.0.1:8123/evidence/g1-r2/runtime.json",
+    "expected": 404,
+    "actual": 404,
+    "pass": true
+  },
+  {
+    "url": "http://127.0.0.1:8124/server/dialogue-adapter.cjs",
+    "expected": 404,
+    "actual": 404,
+    "pass": true
+  },
+  {
+    "case": "foreign origin rejected",
+    "expected": 403,
+    "actual": 403,
+    "pass": true
+  }
+]

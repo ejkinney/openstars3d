@@ -1,0 +1,6 @@
+Independent OpenBot browser observations, 2026-10-28 18:02–18:10Z.
+Tab b1b3a826-b6b9-4c99-a8a8-63b0fd40e8b8.
+Ordinary boot and final reload: index.html without query parameters; all six reported initial GETs returned 200; nine [openstars] info console lines. No application error or warning observed in returned diagnostics.
+Final list_tabs: diagnosticErrorCount=0, loading=false, recording=false.
+Initial ENTER BRIDGE trusted click hid the start overlay but native pointer lock remained null.
+Native Chrome/Safari/Firefox standalone runs were not repeated in revision 1. Prior evidence remains in evidence/g1-worf/. Firefox onboarding and missing Safari/Firefox console capture remain unresolved evidence limits.

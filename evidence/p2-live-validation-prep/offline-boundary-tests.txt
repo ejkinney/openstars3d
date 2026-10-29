@@ -1,0 +1,30 @@
+✔ entry point import/help/no-opt-in are inert even with live-looking environment variables (159.286375ms)
+✔ enablement options are explicit and have no budget/model/endpoint/reset override (0.517417ms)
+✖ secure synthetic file loader rejects public files, symlinks, directories, project files, bad content and oversize (5.3435ms)
+✔ one opt-in listener shares four total attempts including failures; no startup calls or secret exposure (87.000125ms)
+✔ concurrent starts cannot reserve two instances; failed startup consumes the marker without leaking paths (17.730916ms)
+✔ normal companion factory stays offline despite environment and shutdown aborts an active mocked provider (13.028ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 5
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 359.837708
+
+✖ failing tests:
+
+test at tests/p2-live-validation.test.cjs:56:1
+✖ secure synthetic file loader rejects public files, symlinks, directories, project files, bad content and oversize (5.3435ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (/Users/elliot/OpenBot/Shared/openstars-prototype-20261028/tests/p2-live-validation.test.cjs:63:7)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: { message: 'Private key file unavailable or invalid.' },
+    operator: 'rejects',
+    diff: 'simple'
+  }

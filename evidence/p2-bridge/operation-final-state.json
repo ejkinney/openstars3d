@@ -1,0 +1,57 @@
+{
+  "method": "instrumented contract/action route, no lock shim; renderer-owned preset camera",
+  "snapshot": {
+    "state": {
+      "schema": 1,
+      "run": 1,
+      "revision": 5,
+      "phase": "planning",
+      "time": 6,
+      "power": 90,
+      "hull": 100,
+      "consulted": [
+        "crew/mara-vale",
+        "crew/ivo-sen",
+        "crew/tessa-rook"
+      ],
+      "scanned": true,
+      "approach": null,
+      "allocation": null,
+      "decision": null,
+      "outcome": null,
+      "history": [
+        {
+          "id": "consoles/comms",
+          "action": "acknowledge"
+        },
+        {
+          "id": "crew/mara-vale",
+          "action": "consult"
+        },
+        {
+          "id": "crew/ivo-sen",
+          "action": "consult"
+        },
+        {
+          "id": "crew/tessa-rook",
+          "action": "consult"
+        },
+        {
+          "id": "consoles/science",
+          "action": "scan"
+        }
+      ]
+    },
+    "objective": "Operate science, helm and engineering. Scanning reveals a safe approach. Commit at communications.",
+    "panel": {
+      "id": "consoles/science",
+      "text": "Operate science, helm and engineering. Scanning reveals a safe approach. Commit at communications.",
+      "source": "canonical"
+    },
+    "saveStatus": "saved",
+    "focusRequested": true,
+    "pending": false,
+    "actions": []
+  },
+  "nativeNull": true
+}

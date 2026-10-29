@@ -1,0 +1,29 @@
+✔ predefined consultation intents and context reflect canonical decisions, including debrief (2.200417ms)
+✔ mock provider generates original text with contextual prompt; no phrase table or freeform captain input (17.365583ms)
+✔ reaction shape/content screen rejects truncation, extra fields, markup, control text, commands and oversized prose (4.199917ms)
+✔ runtime presents generated reaction separately and cannot mutate canonical advice, actions, resources or outcomes (2.364834ms)
+✔ schema screening does not prove semantic truth; a misleading but well-shaped sentence has no rule authority (1.969167ms)
+✔ suspend/reopen and restart invalidate generated text from earlier requests (6.2735ms)
+✔ invalid/offline/rejected output uses deterministic officer fallback without touching canonical text (5.677416ms)
+Exhaustive legal-sequence states checked: 693
+✔ documented endings have exact consequences and immutable input (1.141334ms)
+✔ all reachable action sequences stay bounded, restore faithfully and always have an exit (22.282375ms)
+✔ invalid/out-of-order/duplicate actions cannot change resources or skip consultations (0.175625ms)
+✔ crew text follows decisions and resource state, including debrief (0.512625ms)
+✔ fixed-step partition invariance, bounded catchup, pause and reset (0.334292ms)
+✔ runtime gates station actions and duplicate interactions; save failure never blocks (1.290458ms)
+✔ restart invalidates a resolved-late old-run dialogue response (5.100291ms)
+✔ hung/rejected/malformed dialogue falls back; late timeout completion cannot replace it (27.87525ms)
+✔ offline adapter never calls fetch and rejects forged canonical checkpoints (1.3645ms)
+✔ mock provider: exact cheap model, thinking disabled, no retries, cap of four attempts (29.139958ms)
+✔ mock provider errors, wrong model, truncation, oversized responses and invalid schema fail closed (1.207667ms)
+✔ mock provider timeout is bounded even if fetch ignores abort; concurrent request stays offline (6.204958ms)
+✔ companion HTTP restricts host/origin/body and serves only allowlisted public modules (34.768459ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 222.20625

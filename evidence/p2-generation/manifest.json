@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-28",
+  "tests": {
+    "passed": 20,
+    "failed": 0,
+    "legalSequencePrefixes": 693,
+    "liveProviderCalls": 0
+  },
+  "visibleBuildRun": false,
+  "interface": "createGame/present unchanged; panel.flavour string; source live-flavour retained",
+  "files": [
+    {
+      "path": "src/gameplay/dialogue.js",
+      "bytes": 5248,
+      "sha256": "bad5216ac58429c606b942203a89f9025f6a9d6d877b881be35159ef48af807c"
+    },
+    {
+      "path": "src/gameplay/runtime.js",
+      "bytes": 5876,
+      "sha256": "78c3adb8ce301a6f716c16c33ed89aad13b4c825817245103ef445948c738319"
+    },
+    {
+      "path": "server/dialogue-adapter.cjs",
+      "bytes": 4778,
+      "sha256": "2d43a27d73d8104b35fd8eeeea27bc9db93cdc5ce412b05b4018d7afcde27afb"
+    },
+    {
+      "path": "tests/p2-systems.test.cjs",
+      "bytes": 11841,
+      "sha256": "27f70542ac6b38eb1d6ba21b2e296807f0b4b01e06f0c384d02b393249abb03c"
+    },
+    {
+      "path": "tests/p2-generation.test.cjs",
+      "bytes": 8502,
+      "sha256": "37caec6158f0b017874c54225a00d382f3b181eec3a77f7ff0d4fa2ae9f3fe76"
+    },
+    {
+      "path": "docs/P2-generation-handoff.md",
+      "bytes": 11223,
+      "sha256": "51647798c80d7448d221894e8c4fd8a53bc5d0efa337d7e5e8241311a16a4a0a"
+    },
+    {
+      "path": "evidence/p2-generation/offline-tests.txt",
+      "bytes": 2249,
+      "sha256": "7a3c6d98c524d426fd88f65f6691ce357fd307071bfc27dc8f597bcb5c685aaa"
+    },
+    {
+      "path": "evidence/p2-generation/prompt-audit.json",
+      "bytes": 467,
+      "sha256": "c8d088cabf6516f80fc38cdc8d32efb9d084450e94867fc35092aa208672d8fe"
+    }
+  ]
+}

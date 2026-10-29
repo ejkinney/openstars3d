@@ -1,0 +1,176 @@
+{
+  "overview": {
+    "booted": true,
+    "frame": 63,
+    "buffer": "1280x720",
+    "canvas": "1280x720",
+    "dpr": 1,
+    "renderer": "WebKit WebGL",
+    "entityCount": 59,
+    "meshInstances": 45,
+    "contractVersion": "0.1.0",
+    "interactables": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ],
+    "maraPos": "[-4.900000095367432, 0, -3.0999999046325684]",
+    "pixelStats": {
+      "samples": 880,
+      "minLum": 20,
+      "maxLum": 139,
+      "avgLum": 52,
+      "buckets": 14
+    },
+    "shotPath": "evidence/g1-r1/overview.png"
+  },
+  "viewscreen": {
+    "booted": true,
+    "frame": 55,
+    "buffer": "1280x720",
+    "canvas": "1280x720",
+    "dpr": 1,
+    "renderer": "WebKit WebGL",
+    "entityCount": 59,
+    "meshInstances": 45,
+    "contractVersion": "0.1.0",
+    "interactables": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ],
+    "maraPos": "[-4.900000095367432, 0, -3.0999999046325684]",
+    "pixelStats": {
+      "samples": 880,
+      "minLum": 20,
+      "maxLum": 155,
+      "avgLum": 58,
+      "buckets": 12
+    },
+    "shotPath": "evidence/g1-r1/viewscreen.png"
+  },
+  "consoles": {
+    "booted": true,
+    "frame": 58,
+    "buffer": "1280x720",
+    "canvas": "1280x720",
+    "dpr": 1,
+    "renderer": "WebKit WebGL",
+    "entityCount": 59,
+    "meshInstances": 45,
+    "contractVersion": "0.1.0",
+    "interactables": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ],
+    "maraPos": "[-4.900000095367432, 0, -3.0999999046325684]",
+    "pixelStats": {
+      "samples": 880,
+      "minLum": 20,
+      "maxLum": 121,
+      "avgLum": 64,
+      "buckets": 6
+    },
+    "shotPath": "evidence/g1-r1/consoles.png"
+  },
+  "crew": {
+    "booted": true,
+    "frame": 41,
+    "buffer": "1280x720",
+    "canvas": "1280x720",
+    "dpr": 1,
+    "renderer": "WebKit WebGL",
+    "entityCount": 59,
+    "meshInstances": 45,
+    "contractVersion": "0.1.0",
+    "interactables": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ],
+    "maraPos": "[-4.900000095367432, 0, -3.0999999046325684]",
+    "pixelStats": {
+      "samples": 880,
+      "minLum": 20,
+      "maxLum": 182,
+      "avgLum": 54,
+      "buckets": 16
+    },
+    "shotPath": "evidence/g1-r1/crew.png"
+  },
+  "helm": {
+    "booted": true,
+    "frame": 47,
+    "buffer": "1280x720",
+    "canvas": "1280x720",
+    "dpr": 1,
+    "renderer": "WebKit WebGL",
+    "entityCount": 59,
+    "meshInstances": 45,
+    "contractVersion": "0.1.0",
+    "interactables": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ],
+    "maraPos": "[-4.900000095367432, 0, -3.0999999046325684]",
+    "pixelStats": {
+      "samples": 880,
+      "minLum": 26,
+      "maxLum": 235,
+      "avgLum": 72,
+      "buckets": 9
+    },
+    "shotPath": "evidence/g1-r1/helm.png"
+  },
+  "helm-prompt": {
+    "booted": true,
+    "frame": 48,
+    "buffer": "1280x720",
+    "canvas": "1280x720",
+    "dpr": 1,
+    "renderer": "WebKit WebGL",
+    "entityCount": 59,
+    "meshInstances": 45,
+    "contractVersion": "0.1.0",
+    "interactables": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ],
+    "maraPos": "[-4.900000095367432, 0, -3.0999999046325684]",
+    "pixelStats": {
+      "samples": 880,
+      "minLum": 26,
+      "maxLum": 235,
+      "avgLum": 72,
+      "buckets": 9
+    },
+    "shotPath": "evidence/g1-r1/helm-prompt.png"
+  }
+}

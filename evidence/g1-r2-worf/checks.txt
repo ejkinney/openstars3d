@@ -1,0 +1,6 @@
+19/19 independent runtime assertions passed.
+node --check src/player.js: exit 0.
+47 before/after preservation hashes identical (four source JS, scene contract, both prior Worf reports, prior Worf evidence).
+Builder player-before.js matches Worf revision-1 input source SHA-256 ad2c12c34e163aef63aaaff6678fc3c9057c79c53de249e595c64a91a532957b.
+Independent diff is confined to onKeyDown guard and dispatch-time gaze refresh. main.js, scene.js and contract.js match prior QA baseline hashes.
+OpenBot final list_tabs: diagnosticErrorCount=0, recording=false. Returned boot diagnostics show nine ordinary info lines and HTTP 200/304; no new application warning/error observed. Native pointer-lock request rejection recorded separately, not counted as successful native entry.

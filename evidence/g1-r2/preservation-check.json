@@ -1,0 +1,9 @@
+{
+  "checked": 57,
+  "changed": [
+    "evidence/http-server.log"
+  ],
+  "unchangedCount": 56,
+  "priorQAArtifactsAndReportsUnchanged": true,
+  "note": "Existing HTTP server writes request traffic automatically to evidence/http-server.log; prior QA evidence unchanged."
+}

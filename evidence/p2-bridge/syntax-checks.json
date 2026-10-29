@@ -1,0 +1,27 @@
+[
+  {
+    "command": "node --check src/player.js",
+    "exit": 0,
+    "output": ""
+  },
+  {
+    "command": "node --check src/main.js",
+    "exit": 0,
+    "output": ""
+  },
+  {
+    "command": "node --check src/displays.js",
+    "exit": 0,
+    "output": ""
+  },
+  {
+    "command": "node --check src/presenter.js",
+    "exit": 0,
+    "output": ""
+  },
+  {
+    "command": "node --check tools/bridge-server.cjs",
+    "exit": 0,
+    "output": ""
+  }
+]

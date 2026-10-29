@@ -1,0 +1,17 @@
+--- src/player.js before r2
++++ src/player.js r2
+@@ -67,8 +67,13 @@
+         if (state.locked) document.exitPointerLock();
+         return;
+       }
++      const wasDown = !!state.keys[e.code];
+       state.keys[e.code] = true;
+-      if (e.code === 'KeyE' && !e.repeat) {
++      // Track E even while paused: holding it across entry must not replay it.
++      // Check native lock too, so release is effective before lockchange arrives.
++      if (e.code === 'KeyE' && !e.repeat && !wasDown && state.locked &&
++          document.pointerLockElement === canvas) {
++        updateGaze(); // Dispatch to the current target, not a previous frame's gaze.
+         const d = Contract.interactables.get(state.hoveredName);
+         if (d && d.enabled) Contract.emitInteract(state.hoveredName);
+       }

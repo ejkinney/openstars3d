@@ -1,0 +1,352 @@
+{
+  "results": [
+    {
+      "name": "native-null pre-entry trusted E suppressed",
+      "pass": true,
+      "detail": {
+        "state": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": false,
+          "nativeNull": true,
+          "nativeCanvas": false,
+          "ownLockProperty": false,
+          "prompt": "",
+          "opacity": "0",
+          "crosshair": "",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "calls": [],
+        "input": {
+          "code": "KeyE",
+          "repeat": false,
+          "trusted": true
+        }
+      }
+    },
+    {
+      "name": "active fresh trusted E dispatches one helm",
+      "pass": true,
+      "detail": {
+        "calls": [
+          {
+            "id": "consoles/helm",
+            "label": "Helm Console"
+          }
+        ],
+        "state": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "1",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "input": {
+          "code": "KeyE",
+          "repeat": false,
+          "trusted": true
+        }
+      }
+    },
+    {
+      "name": "trusted Escape hides crosshair and prompt",
+      "pass": true,
+      "detail": {
+        "state": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": false,
+          "nativeNull": true,
+          "nativeCanvas": false,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "0",
+          "crosshair": "0",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "input": {
+          "code": "Escape",
+          "repeat": false,
+          "trusted": true
+        }
+      }
+    },
+    {
+      "name": "native-null paused trusted E suppressed",
+      "pass": true,
+      "detail": {
+        "state": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": false,
+          "nativeNull": true,
+          "nativeCanvas": false,
+          "ownLockProperty": false,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "0",
+          "crosshair": "0",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "calls": [],
+        "input": {
+          "code": "KeyE",
+          "repeat": false,
+          "trusted": true
+        }
+      }
+    },
+    {
+      "name": "cached locked true but native null E suppressed",
+      "pass": true,
+      "detail": {
+        "before": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": true,
+          "nativeNull": true,
+          "nativeCanvas": false,
+          "ownLockProperty": false,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "1",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "after": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": true,
+          "nativeNull": true,
+          "nativeCanvas": false,
+          "ownLockProperty": false,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "1",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "calls": []
+      }
+    },
+    {
+      "name": "released paused E does not replay on re-entry",
+      "pass": true,
+      "detail": {
+        "state": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "1",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        },
+        "calls": []
+      }
+    },
+    {
+      "name": "fresh E after released-paused re-entry emits once",
+      "pass": true,
+      "detail": {
+        "calls": [
+          {
+            "id": "consoles/helm",
+            "label": "Helm Console"
+          }
+        ]
+      }
+    },
+    {
+      "name": "held paused E initially suppressed",
+      "pass": true,
+      "detail": {
+        "state": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": false,
+          "nativeNull": true,
+          "nativeCanvas": false,
+          "ownLockProperty": false,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "0",
+          "crosshair": "0",
+          "url": "http://127.0.0.1:8123/index.html"
+        }
+      }
+    },
+    {
+      "name": "held paused E does not replay on re-entry",
+      "pass": true,
+      "detail": {
+        "state": {
+          "pos": {
+            "x": -3.4000000953674316,
+            "y": 1.7000000476837158,
+            "z": -2.299999952316284
+          },
+          "forward": {
+            "x": 0,
+            "y": -0.4008188340197077,
+            "z": -0.9161573349021892
+          },
+          "hover": "consoles/helm",
+          "locked": true,
+          "nativeNull": false,
+          "nativeCanvas": true,
+          "ownLockProperty": true,
+          "prompt": "Helm Console — [E] Take the helm",
+          "opacity": "1",
+          "crosshair": "1",
+          "url": "http://127.0.0.1:8123/index.html"
+        }
+      }
+    },
+    {
+      "name": "repeat and duplicate non-repeat held E suppressed",
+      "pass": true,
+      "detail": {
+        "calls": []
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": true
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": true
+    },
+    {
+      "code": "Escape",
+      "repeat": false,
+      "trusted": true
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": true
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": true,
+      "trusted": false
+    },
+    {
+      "code": "KeyE",
+      "repeat": false,
+      "trusted": false
+    }
+  ],
+  "calls": [
+    {
+      "id": "consoles/helm",
+      "label": "Helm Console"
+    },
+    {
+      "id": "consoles/helm",
+      "label": "Helm Console"
+    }
+  ]
+}

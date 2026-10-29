@@ -1,0 +1,17 @@
+{
+  "pos": {
+    "x": -3.4133334159851074,
+    "y": 1.7000000476837158,
+    "z": -2.398560047149658
+  },
+  "forward": {
+    "x": 0,
+    "y": -0.4068471603912298,
+    "z": -0.9134962441529757
+  },
+  "hover": "consoles/helm",
+  "locked": true,
+  "prompt": "Helm Console — [E] Take the helm",
+  "opacity": "1",
+  "url": "http://127.0.0.1:8123/index.html"
+}

@@ -1,0 +1,78 @@
+{
+  "game": {
+    "state": {
+      "schema": 1,
+      "run": 2,
+      "revision": 7,
+      "phase": "debrief",
+      "time": 6,
+      "power": 60,
+      "hull": 50,
+      "consulted": [
+        "crew/mara-vale",
+        "crew/ivo-sen",
+        "crew/tessa-rook"
+      ],
+      "scanned": false,
+      "approach": "direct",
+      "allocation": "rescue",
+      "decision": "rescue-urgent",
+      "outcome": {
+        "kind": "partial-rescue",
+        "rescued": 10,
+        "lost": 2,
+        "damage": 50,
+        "score": 50
+      },
+      "history": [
+        {
+          "id": "consoles/comms",
+          "action": "acknowledge"
+        },
+        {
+          "id": "crew/mara-vale",
+          "action": "consult"
+        },
+        {
+          "id": "crew/ivo-sen",
+          "action": "consult"
+        },
+        {
+          "id": "crew/tessa-rook",
+          "action": "consult"
+        },
+        {
+          "id": "consoles/helm",
+          "action": "approach-direct"
+        },
+        {
+          "id": "consoles/engineering",
+          "action": "power-rescue"
+        },
+        {
+          "id": "consoles/comms",
+          "action": "rescue-urgent"
+        }
+      ]
+    },
+    "objective": "10/12 rescued; 2 lost; hull 50/100. Restart at communications.",
+    "panel": {
+      "id": "consoles/comms",
+      "text": "10/12 rescued; 2 lost; hull 50/100. Restart at communications.",
+      "source": "canonical"
+    },
+    "saveStatus": "saved",
+    "focusRequested": true,
+    "pending": false,
+    "actions": [
+      {
+        "action": "restart",
+        "label": "Restart encounter"
+      }
+    ]
+  },
+  "mode": "panel",
+  "locked": false,
+  "locks": 4,
+  "releases": 4
+}

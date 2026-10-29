@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+.cache/
+*.pid
+.env
+.env.*
+!.env.example
+
+# Never commit the single-use provider-validation reservation.
+evidence/p2-live-validation/session-used.json

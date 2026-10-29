@@ -1,0 +1,147 @@
+{
+  "overview": {
+    "booted": true,
+    "frame": 10,
+    "buffer": "1280x720",
+    "canvas": "1280x720",
+    "dpr": 1,
+    "renderer": "WebKit WebGL",
+    "entityCount": 101,
+    "meshInstances": 86,
+    "contractVersion": "0.1.0",
+    "interactables": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ],
+    "maraPos": "[-4.900000095367432, 0, -3.0999999046325684]",
+    "pixelStats": {
+      "samples": 880,
+      "minLum": 10,
+      "maxLum": 244,
+      "avgLum": 30,
+      "buckets": 17
+    },
+    "shotPath": "evidence/p3-style/overview.png"
+  },
+  "incoming": {
+    "booted": true,
+    "frame": 15,
+    "buffer": "1280x720",
+    "canvas": "1280x720",
+    "dpr": 1,
+    "renderer": "WebKit WebGL",
+    "entityCount": 101,
+    "meshInstances": 86,
+    "contractVersion": "0.1.0",
+    "interactables": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ],
+    "maraPos": "[-4.900000095367432, 0, -3.0999999046325684]",
+    "pixelStats": {
+      "samples": 880,
+      "minLum": 11,
+      "maxLum": 244,
+      "avgLum": 46,
+      "buckets": 12
+    },
+    "shotPath": "evidence/p3-style/incoming.png"
+  },
+  "crew": {
+    "booted": true,
+    "frame": 14,
+    "buffer": "1280x720",
+    "canvas": "1280x720",
+    "dpr": 1,
+    "renderer": "WebKit WebGL",
+    "entityCount": 101,
+    "meshInstances": 86,
+    "contractVersion": "0.1.0",
+    "interactables": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ],
+    "maraPos": "[-4.900000095367432, 0, -3.0999999046325684]",
+    "pixelStats": {
+      "samples": 880,
+      "minLum": 12,
+      "maxLum": 244,
+      "avgLum": 28,
+      "buckets": 19
+    },
+    "shotPath": "evidence/p3-style/crew.png"
+  },
+  "operation": {
+    "booted": true,
+    "frame": 14,
+    "buffer": "1280x720",
+    "canvas": "1280x720",
+    "dpr": 1,
+    "renderer": "WebKit WebGL",
+    "entityCount": 101,
+    "meshInstances": 86,
+    "contractVersion": "0.1.0",
+    "interactables": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ],
+    "maraPos": "[-4.900000095367432, 0, -3.0999999046325684]",
+    "pixelStats": {
+      "samples": 880,
+      "minLum": 12,
+      "maxLum": 244,
+      "avgLum": 40,
+      "buckets": 19
+    },
+    "shotPath": "evidence/p3-style/operation.png"
+  },
+  "debrief": {
+    "booted": true,
+    "frame": 11,
+    "buffer": "1280x720",
+    "canvas": "1280x720",
+    "dpr": 1,
+    "renderer": "WebKit WebGL",
+    "entityCount": 101,
+    "meshInstances": 86,
+    "contractVersion": "0.1.0",
+    "interactables": [
+      "consoles/helm",
+      "consoles/science",
+      "consoles/engineering",
+      "consoles/comms",
+      "crew/mara-vale",
+      "crew/ivo-sen",
+      "crew/tessa-rook"
+    ],
+    "maraPos": "[-4.900000095367432, 0, -3.0999999046325684]",
+    "pixelStats": {
+      "samples": 880,
+      "minLum": 12,
+      "maxLum": 244,
+      "avgLum": 23,
+      "buckets": 12
+    },
+    "shotPath": "evidence/p3-style/debrief.png"
+  }
+}

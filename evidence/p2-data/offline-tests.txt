@@ -1,0 +1,22 @@
+Exhaustive legal-sequence states checked: 693
+✔ documented endings have exact consequences and immutable input (1.6435ms)
+✔ all reachable action sequences stay bounded, restore faithfully and always have an exit (22.644292ms)
+✔ invalid/out-of-order/duplicate actions cannot change resources or skip consultations (0.189042ms)
+✔ crew text follows decisions and resource state, including debrief (0.229708ms)
+✔ fixed-step partition invariance, bounded catchup, pause and reset (0.525917ms)
+✔ runtime gates station actions and duplicate interactions; save failure never blocks (0.457625ms)
+✔ restart invalidates a resolved-late old-run dialogue response (3.815792ms)
+✔ hung/rejected/malformed dialogue falls back; late timeout completion cannot replace it (20.5145ms)
+✔ offline adapter never calls fetch and rejects forged canonical checkpoints (0.439166ms)
+✔ mock provider: exact cheap model, thinking disabled, no retries, cap of four attempts (28.051208ms)
+✔ mock provider errors, wrong model, truncation, oversized responses and invalid schema fail closed (1.782125ms)
+✔ mock provider timeout is bounded even if fetch ignores abort; concurrent request stays offline (5.319667ms)
+✔ companion HTTP restricts host/origin/body and serves only allowlisted public modules (41.891833ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 239.793291

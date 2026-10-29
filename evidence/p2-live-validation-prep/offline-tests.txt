@@ -1,0 +1,35 @@
+✔ predefined consultation intents and context reflect canonical decisions, including debrief (1.716875ms)
+✔ mock provider generates original text with contextual prompt; no phrase table or freeform captain input (21.736541ms)
+✔ reaction shape/content screen rejects truncation, extra fields, markup, control text, commands and oversized prose (3.897083ms)
+✔ runtime presents generated reaction separately and cannot mutate canonical advice, actions, resources or outcomes (2.28425ms)
+✔ schema screening does not prove semantic truth; a misleading but well-shaped sentence has no rule authority (1.954208ms)
+✔ suspend/reopen and restart invalidate generated text from earlier requests (6.350125ms)
+✔ invalid/offline/rejected output uses deterministic officer fallback without touching canonical text (4.411833ms)
+✔ entry point import/help/no-opt-in are inert even with live-looking environment variables (164.606125ms)
+✔ enablement options are explicit and have no budget/model/endpoint/reset override (0.284958ms)
+✔ secure synthetic file loader rejects public files, symlinks, directories, project files, bad content and oversize (8.135333ms)
+✔ one opt-in listener shares four total attempts including failures; no startup calls or secret exposure (80.203083ms)
+✔ concurrent starts cannot reserve two instances; failed startup consumes the marker without leaking paths (15.555041ms)
+✔ normal companion factory stays offline despite environment and shutdown aborts an active mocked provider (9.224917ms)
+Exhaustive legal-sequence states checked: 693
+✔ documented endings have exact consequences and immutable input (1.218916ms)
+✔ all reachable action sequences stay bounded, restore faithfully and always have an exit (26.224166ms)
+✔ invalid/out-of-order/duplicate actions cannot change resources or skip consultations (0.181208ms)
+✔ crew text follows decisions and resource state, including debrief (0.22525ms)
+✔ fixed-step partition invariance, bounded catchup, pause and reset (0.318792ms)
+✔ runtime gates station actions and duplicate interactions; save failure never blocks (0.481584ms)
+✔ restart invalidates a resolved-late old-run dialogue response (2.599958ms)
+✔ hung/rejected/malformed dialogue falls back; late timeout completion cannot replace it (21.927292ms)
+✔ offline adapter never calls fetch and rejects forged canonical checkpoints (0.61075ms)
+✔ mock provider: exact cheap model, thinking disabled, no retries, cap of four attempts (17.54675ms)
+✔ mock provider errors, wrong model, truncation, oversized responses and invalid schema fail closed (1.355584ms)
+✔ mock provider timeout is bounded even if fetch ignores abort; concurrent request stays offline (6.928709ms)
+✔ companion HTTP restricts host/origin/body and serves only allowlisted public modules (33.11675ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 356.873

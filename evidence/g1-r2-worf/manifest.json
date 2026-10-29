@@ -1,0 +1,94 @@
+{
+  "active-canvas.json": {
+    "bytes": 449,
+    "sha256": "083aed76525e3d796adc4e4f67e9010baa48899d8bd85962ef2ecca2b307a504"
+  },
+  "active-canvas.png": {
+    "bytes": 53406,
+    "sha256": "53aba5111767fe9e110b599cdf44e890a1b8a2ca5f1da1a921391475129023cd"
+  },
+  "active-overlay.png": {
+    "bytes": 225226,
+    "sha256": "36405fbd66080c4c842d33c22f7abc5f345dfbf0919208b41c1b995c821a65f2"
+  },
+  "active-overlay.webm": {
+    "bytes": 268186,
+    "sha256": "d5008cb4b0cdc1a05c30e28b7a2bf8fdc8514775038442d9c0b527bcd5238731"
+  },
+  "active-trusted.json": {
+    "bytes": 826,
+    "sha256": "9b550b50afd4c3ef296d3479cc2a22fea5c0e92c4975ad4c0ba424c40d289054"
+  },
+  "capture-sink.pid": {
+    "bytes": 5,
+    "sha256": "5c655c234db6da641eec020204208008d8ede3bf2140edd17ae557d17490bc95"
+  },
+  "checks.txt": {
+    "bytes": 771,
+    "sha256": "9506219de783d58bccdd4cc481a5ba233accbf4d4171753b84d9aafece5015e2"
+  },
+  "final-boot.json": {
+    "bytes": 376,
+    "sha256": "32aedd6c19d604c0e2ef769ec61ed2ecb13516e2f81d6fe873ca5b9532d3b8a9"
+  },
+  "focused-cases.js": {
+    "bytes": 2786,
+    "sha256": "d6d8b71f31c18105d25fd669de1d74e59d5a050fab7352803f2085797a92136e"
+  },
+  "harness.js": {
+    "bytes": 3931,
+    "sha256": "c89e8afbf082dfea268d6b9a90ebbc0df8f55dbdf368d3464fd784d15a1e2c5c"
+  },
+  "independent-player.diff": {
+    "bytes": 842,
+    "sha256": "435bec99af2f796fd5a70dada7272dc8736687ff5ba45ff4c4c7dac63c89a4c4"
+  },
+  "native-entry-attempt.json": {
+    "bytes": 674,
+    "sha256": "048525c476c3f08296abf1bf023e8e1c49233b43d002b2f592bbe1919ff2dd2d"
+  },
+  "paused-native-canvas.json": {
+    "bytes": 451,
+    "sha256": "66e3a888d047d768c11c63647e1dfad8ab2798b4886ba57ebfb20e92cd9f8190"
+  },
+  "paused-native-canvas.png": {
+    "bytes": 53406,
+    "sha256": "53aba5111767fe9e110b599cdf44e890a1b8a2ca5f1da1a921391475129023cd"
+  },
+  "paused-native-overlay.png": {
+    "bytes": 182959,
+    "sha256": "a67404ee7e00b2c86d1a5666a4b908266b338b99385fb5192f96cfdc27e3771b"
+  },
+  "paused-native-overlay.webm": {
+    "bytes": 264502,
+    "sha256": "486d094337e6d5b2ea89fafed8b5bc6797add2fc0786564812a04675b28db154"
+  },
+  "paused-native-trusted.json": {
+    "bytes": 741,
+    "sha256": "d833e25a176e8e9a6520d2c3192b9e9d6f2cc0c5317fc2d27f7142800af4c789"
+  },
+  "pre-entry-native.json": {
+    "bytes": 709,
+    "sha256": "53d51f0801300544f9539197e4ac3da0e815f5a96cdc621309d07034a5b45afc"
+  },
+  "preservation-after.json": {
+    "bytes": 5365,
+    "sha256": "b5c9aef01358d354401c0c41a9d666ff42508af816c190b289c927969b4ee0de"
+  },
+  "preservation-before.json": {
+    "bytes": 5365,
+    "sha256": "b5c9aef01358d354401c0c41a9d666ff42508af816c190b289c927969b4ee0de"
+  },
+  "preservation-check.json": {
+    "bytes": 65,
+    "sha256": "41c2da1ae04e3dc08035aa58063dfbedf42e05e14d0d8f54dafc37261586506f"
+  },
+  "runtime-part1.json": {
+    "bytes": 8616,
+    "sha256": "65b929ac5bf7bb45fe6558531c149365f965e6b75e573f6d089866f4fb30207f"
+  },
+  "runtime.json": {
+    "bytes": 20393,
+    "sha256": "7bc811999ae49781430a922316a5834cea4e4ec7f77980693d2dc92b689a355a"
+  }
+}

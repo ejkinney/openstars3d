@@ -1,0 +1,32 @@
+{
+  "state": {
+    "pos": {
+      "x": -3.4000000953674316,
+      "y": 1.7000000476837158,
+      "z": -2.299999952316284
+    },
+    "forward": {
+      "x": 0,
+      "y": -0.4008188340197077,
+      "z": -0.9161573349021892
+    },
+    "hover": "consoles/helm",
+    "locked": false,
+    "nativeNull": true,
+    "nativeCanvas": false,
+    "ownLockProperty": false,
+    "prompt": "",
+    "opacity": "0",
+    "crosshair": "",
+    "url": "http://127.0.0.1:8123/index.html"
+  },
+  "attempts": [
+    {
+      "activation": true,
+      "error": {
+        "name": "SecurityError",
+        "message": "The root document of this element is not valid for pointer lock."
+      }
+    }
+  ]
+}

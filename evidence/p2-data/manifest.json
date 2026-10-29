@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-28",
+  "tests": {
+    "passed": 13,
+    "failed": 0,
+    "legalSequencePrefixes": 693,
+    "liveProviderCalls": 0
+  },
+  "browserMethod": "OpenBot embedded browser: semantic boot/acknowledge/Mara/restart; remaining rescue path instrumented",
+  "files": [
+    {
+      "path": "src/gameplay/encounter.js",
+      "bytes": 5882,
+      "sha256": "951267f9bb6a2d7206ecbd9937cd5ca34fb66f98d54cf99293e327659b19e2b6"
+    },
+    {
+      "path": "src/gameplay/dialogue.js",
+      "bytes": 3280,
+      "sha256": "0bb3ce48159566e51bd5d8a1dc601e0d9f4c4af01f0b332cce64ddf32009634b"
+    },
+    {
+      "path": "src/gameplay/runtime.js",
+      "bytes": 5717,
+      "sha256": "e877ca82e203cc5a25e4d36bd667e72f36e69380f7f66dd37649b188da109713"
+    },
+    {
+      "path": "server/dialogue-adapter.cjs",
+      "bytes": 4306,
+      "sha256": "4233d0e405a2e151862f3514e70ba6c318439dfdfe47d30e33014743d823cce1"
+    },
+    {
+      "path": "server/local-server.cjs",
+      "bytes": 2960,
+      "sha256": "b47070ad2617d030faff04a3fca7eb01c5362d7fb43319d39fdb2ce771dd3377"
+    },
+    {
+      "path": "tests/p2-systems.test.cjs",
+      "bytes": 11671,
+      "sha256": "bf7469999d242457792b4ed740a8409d6f4db3cd75d57f950c237577673e2773"
+    },
+    {
+      "path": "tools/p2-harness.html",
+      "bytes": 3432,
+      "sha256": "a5b624cf61d3752178715fef4c9ed3656afa3a5fd23c4af366c3fb1f2b916e00"
+    },
+    {
+      "path": "docs/P2-systems-handoff.md",
+      "bytes": 15302,
+      "sha256": "35cce3531ccf4b7c5bf8df0c8cd9fbfd93645f315fc80bbf1317951b2d2f7a85"
+    },
+    {
+      "path": "evidence/p2-data/offline-tests.txt",
+      "bytes": 1424,
+      "sha256": "cfe3f6431e51e97cc4f84ae6cd6eec4a0069bde628a141a9e17b779f51651c9e"
+    },
+    {
+      "path": "evidence/p2-data/harness-route.webm",
+      "bytes": 373880,
+      "sha256": "c8b96bbb5d3f1c49a4890cb7f0ae5e02f723c78f871b1c6be1b3066965c17423"
+    },
+    {
+      "path": "evidence/p2-data/harness-incoming.png",
+      "bytes": 344308,
+      "sha256": "cd7b54bf6401ec844b8c6fad03484eca9ccfbb617306ddea0799a3d819f9629d"
+    },
+    {
+      "path": "evidence/p2-data/harness-route-crew.png",
+      "bytes": 488491,
+      "sha256": "b32b8de211a989f02f1e5165bea66dce84eb22d65551e33b5a842ecbafd9e107"
+    },
+    {
+      "path": "evidence/p2-data/harness-full-rescue.png",
+      "bytes": 430925,
+      "sha256": "973295b79a46008d69b6d57c758579db68f9b63e463765f690d57e17b2513f6a"
+    }
+  ]
+}

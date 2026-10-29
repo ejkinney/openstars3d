@@ -1,0 +1,13 @@
+✔ discovery headers are passed only into the local client; exact free pin gates generation (1.821542ms)
+✔ missing service and any non-active, disabled, paid, or non-pinned model fail closed (0.741958ms)
+✔ attempt, prompt, timeout, and response byte limits match the handoff (2.491667ms)
+✔ normal local server stays offline and enforces 128 requests per process (213.586625ms)
+✔ explicit opt-in route keeps mocked auth out of HTTP and logs; startup itself does not generate (9.995084ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 326.541625

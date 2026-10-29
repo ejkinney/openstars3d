@@ -1,0 +1,30 @@
+{
+  "game": {
+    "state": {
+      "schema": 1,
+      "run": 1,
+      "revision": 0,
+      "phase": "incoming",
+      "time": 8,
+      "power": 100,
+      "hull": 100,
+      "consulted": [],
+      "scanned": false,
+      "approach": null,
+      "allocation": null,
+      "decision": null,
+      "outcome": null,
+      "history": []
+    },
+    "objective": "Civilian survey ship Aster: 12 aboard, trapped in a charged debris field. Acknowledge at communications.",
+    "panel": null,
+    "saveStatus": "unsaved",
+    "focusRequested": false,
+    "pending": false,
+    "actions": []
+  },
+  "mode": "walking",
+  "locked": true,
+  "locks": 1,
+  "releases": 0
+}

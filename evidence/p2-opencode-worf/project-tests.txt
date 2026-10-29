@@ -1,0 +1,30 @@
+✔ predefined consultation intents and context reflect canonical decisions, including debrief (5.221459ms)
+✔ mock OpenCode generates original contextual text and screens malformed output (3.683375ms)
+✔ runtime presents generated reaction separately and cannot mutate canonical advice, actions, resources or outcomes (8.698ms)
+✔ schema screening does not prove semantic truth; a misleading but well-shaped sentence has no rule authority (3.2495ms)
+✔ suspend/reopen and restart invalidate generated text from earlier requests (5.473959ms)
+✔ invalid/offline/rejected output uses deterministic officer fallback without touching canonical text (4.890458ms)
+✔ retired DeepSeek CLI cannot run or read credentials (84.157375ms)
+✔ service uses discovered authenticated endpoint and exact free model only (2.297125ms)
+✔ companion needs explicit opt-in; startup makes no generation call (12.659917ms)
+Exhaustive legal-sequence states checked: 693
+✔ documented endings have exact consequences and immutable input (5.109625ms)
+✔ all reachable action sequences stay bounded, restore faithfully and always have an exit (53.168917ms)
+✔ invalid/out-of-order/duplicate actions cannot change resources or skip consultations (0.584791ms)
+✔ crew text follows decisions and resource state, including debrief (0.621041ms)
+✔ fixed-step partition invariance, bounded catchup, pause and reset (0.728875ms)
+✔ runtime gates station actions and duplicate interactions; save failure never blocks (1.037625ms)
+✔ restart invalidates a resolved-late old-run dialogue response (8.160958ms)
+✔ hung/rejected/malformed dialogue falls back; late timeout completion cannot replace it (20.636834ms)
+✔ offline adapter and forged checkpoints fail closed (1.104ms)
+✔ mock OpenCode generation uses only free model and four attempts (2.518083ms)
+✔ mock errors, oversized responses, invalid schema and timeout fall back (7.291792ms)
+✔ companion HTTP restricts host/origin/body and serves only allowlisted public modules (79.968959ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 339.974209
