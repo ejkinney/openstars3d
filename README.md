@@ -2,6 +2,8 @@
 
 Open stars, expanded and 3D.
 
+Repository: `openstars3d`.
+
 Local PlayCanvas first-person starship bridge prototype. Engine-only (no editor or
 account); PlayCanvas 2.23.3 vendored at `lib/playcanvas.min.js`.
 
